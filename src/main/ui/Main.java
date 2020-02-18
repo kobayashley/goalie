@@ -7,6 +7,7 @@ import java.util.Date;
 
 public class Main {
     //Make a main method that gets things going
+    int OKRCount = 0;
 
     public static void main(String[] args) {
         System.out.println("getting things goin");
@@ -21,6 +22,15 @@ public class Main {
 
         defineOKR();
         updateProgress();
+    }
+
+    public void addOKR(){
+        OKRCount++;
+    }
+
+    //Return a value and use it
+    public int countOKRs(){
+        return OKRCount;
     }
 
     public static void defineOKR() {
