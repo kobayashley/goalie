@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class Main {
     //Make a main method that gets things going
-    int OKRCount = 0;
+    static int OKRCount = 0;
 
     public static void main(String[] args) {
         System.out.println("getting things goin");
@@ -19,17 +19,32 @@ public class Main {
         //Pass a parameter
         //Use a local variable
         OKR okr = new OKR(deadlineDate, "Ashley");
+        addOKR();
+        //Use a condition, and a loop
+        if(countOKRs() == 0){
+            System.out.println("This team currently has no OKRs");
+        }
+
+        if(countOKRs() >= 5){
+            System.out.println("This team has more than 5 OKRs! \n We recommend no more than 5 at a time.");
+        }
+
+        for(int i=0; i<5; i++){
+            System.out.println(i);
+        }
+
+        //Return a value and use it
+        System.out.println("The current number of OKRs for this team is " + countOKRs());
 
         defineOKR();
         updateProgress();
     }
 
-    public void addOKR(){
+    public static void addOKR(){
         OKRCount++;
     }
 
-    //Return a value and use it
-    public int countOKRs(){
+    public static int countOKRs(){
         return OKRCount;
     }
 
@@ -42,6 +57,3 @@ public class Main {
     }
 }
 
-//ask Noa: Date is deprecated, how to convert between Calendar object and Date object
-//also if passing a parameter in the constructor is also an example of a local variable,
-// can this count for both requirements as met?
