@@ -13,12 +13,17 @@ public class Main {
         System.out.println("getting things goin");
 
         // todo: let user define a deadline for the task using Calendar/Date classes
-        
+        Calendar deadlineCal = Calendar.getInstance();
+//        deadlineDate.set(2020, 02, 24);
+        deadlineCal.set(Calendar.YEAR, 2020);
+        deadlineCal.set(Calendar.MONTH, Calendar.FEBRUARY);
+        deadlineCal.set(Calendar.DAY_OF_MONTH, 24);
+        Date dateRepresentation = deadlineCal.getTime();
 
         //Construct an object (Note: this should probably happen within your main method)
         //Pass a parameter
         //Use a local variable
-        OKR okr = new OKR(deadlineDate, "Ashley");
+        OKR okr = new OKR(dateRepresentation, "Ashley");
         addOKR();
         //Use a condition, and a loop
         if(countOKRs() == 0){
