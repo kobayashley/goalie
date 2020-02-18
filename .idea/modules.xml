@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CPSC210_PROJECT.iml" filepath="$PROJECT_DIR$/CPSC210_PROJECT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/D3/D3-MessyZooStarter/src/D3-MessyZooStarter.iml" filepath="$PROJECT_DIR$/D3/D3-MessyZooStarter/src/D3-MessyZooStarter.iml" />
     </modules>
   </component>
 </project>
