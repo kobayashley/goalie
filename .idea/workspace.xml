@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e75f548c-da9c-45a4-80ab-17f699effa30" name="Default" comment="" />
+    <list default="true" id="e75f548c-da9c-45a4-80ab-17f699effa30" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/Main.java" afterPath="$PROJECT_DIR$/src/main/ui/Main.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,25 +32,10 @@
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/goalie/src/main/ui/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/ui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-              <folding>
-                <element signature="e#173#174#0" expanded="true" />
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#271#272#0" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CPSC210_PROJECT.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CPSC210_PROJECT.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -56,10 +44,16 @@
       <file leaf-file-name="Main.class" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/Main.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <element signature="e#0#339#0" expanded="true" />
+                <marker date="1582005391082" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1582005391082" expanded="true" signature="162:169" ph="{}" />
+                <marker date="1582005391082" expanded="true" signature="214:268" ph="{...}" />
+                <marker date="1582005391082" expanded="false" signature="304:315" ph=" { " />
+                <marker date="1582005391082" expanded="false" signature="356:362" ph=" }" />
+                <marker date="1582005391082" expanded="false" signature="403:414" ph=" { " />
+                <marker date="1582005391082" expanded="false" signature="460:466" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -74,6 +68,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -83,8 +80,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/ui/Main.java" />
         <option value="$PROJECT_DIR$/goalie/src/main/ui/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/ui/Main.java" />
       </list>
     </option>
   </component>
@@ -120,19 +117,19 @@
             <path>
               <item name="CPSC210_PROJECT" type="b2602c69:ProjectViewProjectNode" />
               <item name="CPSC210_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="goalie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CPSC210_PROJECT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPSC210_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="goalie" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CPSC210_PROJECT" type="b2602c69:ProjectViewProjectNode" />
               <item name="CPSC210_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="goalie" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CPSC210_PROJECT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CPSC210_PROJECT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -272,7 +269,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -324,12 +321,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/Main.class">
+    <entry file="file://$PROJECT_DIR$/CPSC210_PROJECT.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/Main.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="e#0#339#0" expanded="true" />
+            <marker date="1582005391082" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1582005391082" expanded="true" signature="162:169" ph="{}" />
+            <marker date="1582005391082" expanded="true" signature="214:268" ph="{...}" />
+            <marker date="1582005391082" expanded="false" signature="304:315" ph=" { " />
+            <marker date="1582005391082" expanded="false" signature="356:362" ph=" }" />
+            <marker date="1582005391082" expanded="false" signature="403:414" ph=" { " />
+            <marker date="1582005391082" expanded="false" signature="460:466" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goalie/src/main/ui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/CPSC210_PROJECT/Main.class" />
+    <entry file="file://$PROJECT_DIR$/goalie/src/main/ui/Main.java" />
+    <entry file="file://$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/Main.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1582005391082" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1582005391082" expanded="true" signature="162:169" ph="{}" />
+            <marker date="1582005391082" expanded="true" signature="214:268" ph="{...}" />
+            <marker date="1582005391082" expanded="false" signature="304:315" ph=" { " />
+            <marker date="1582005391082" expanded="false" signature="356:362" ph=" }" />
+            <marker date="1582005391082" expanded="false" signature="403:414" ph=" { " />
+            <marker date="1582005391082" expanded="false" signature="460:466" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -342,16 +379,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goalie/src/main/ui/Main.java">
+    <entry file="file://$PROJECT_DIR$/goalie/src/main/ui/Main.java" />
+    <entry file="file://$PROJECT_DIR$/D3/D3-MessyZooStarter/src/main/model/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
