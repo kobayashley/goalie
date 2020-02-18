@@ -11,9 +11,9 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("getting things goin");
-        Calendar deadline1 = new Calendar();
-        long deadline1Time = deadline1.getTimeInMillis();
-        Date deadlineDate = new Date(deadline1Time);
+
+        // todo: let user define a deadline for the task using Calendar/Date classes
+        
 
         //Construct an object (Note: this should probably happen within your main method)
         //Pass a parameter
