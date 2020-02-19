@@ -77,9 +77,7 @@ public class Main {
             //use a local variable (loop variable)
             if(option.equals("view")){
                 System.out.println("list of current OKRs: ");
-                for(int i=0; i<listofOKRs.size(); i++){
-                    System.out.println(listofOKRs.get(i).getTitle());
-                }
+                printTitlesListofOKRs();
             }
             if (option.equals("quit")){
                 break;
@@ -88,6 +86,12 @@ public class Main {
         }
         System.out.println("Thank you! Good luck!");
 
+    }
+
+    public static void printTitlesListofOKRs() {
+        for(int i=0; i<listofOKRs.size(); i++){
+            System.out.println(listofOKRs.get(i).getTitle());
+        }
     }
 
     public static void addOKR(){
