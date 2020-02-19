@@ -37,20 +37,12 @@ public class Main {
         if(countOKRs() == 0){
             System.out.println("This team currently has no OKRs");
         }
-
         if(countOKRs() >= 5){
             System.out.println("This team has more than 5 OKRs! \n We recommend no more than 5 at a time.");
-        }
-        //use a local variable (loop variable)
-        for(int i=0; i<listofOKRs.size(); i++){
-            System.out.println(listofOKRs.get(i));
         }
 
         //Return a value and use it
         System.out.println("The current number of OKRs for this team is " + countOKRs());
-
-        defineOKR();
-        updateProgress();
     }
 
     //take user input
@@ -58,7 +50,7 @@ public class Main {
         String option = ""; //local variable
         while (scanner.hasNext()){
             System.out.println("Please select an option");
-            System.out.println("add \n view \n quit");
+            System.out.println("\n add \n view \n quit");
             option = scanner.nextLine();
             System.out.println("you selected: "+option);
 
@@ -72,20 +64,23 @@ public class Main {
                 System.out.println("OKR title has been set.");
                 listofOKRs.add(newOKR);
                 addOKR();
+
                 System.out.println("Continue? y/n");
-                option = scanner.nextLine();
                 if(option.equals("n")){
                     break;
                 }
-            }
-
-            if(option.equals("view"));{
-                for(int i=0; i<listofOKRs.size(); i++){
-                    System.out.println("list of current OKRs: ");
-                    System.out.println(listofOKRs.get(i).getTitle());
+                else{
+                    option = scanner.nextLine();
                 }
             }
 
+            //use a local variable (loop variable)
+            if(option.equals("view")){
+                System.out.println("list of current OKRs: ");
+                for(int i=0; i<listofOKRs.size(); i++){
+                    System.out.println(listofOKRs.get(i).getTitle());
+                }
+            }
             if (option.equals("quit")){
                 break;
             }
@@ -103,12 +98,5 @@ public class Main {
         return OKRCount;
     }
 
-    public static void defineOKR() {
-        System.out.println("this is a new OKR!");
-    }
-
-    public static void updateProgress(){
-        System.out.println("this OKR status updated");
-    }
 }
 
