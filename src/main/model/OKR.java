@@ -4,12 +4,11 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class OKR {
-    private String title;
+    private Objective objective;
+    private KeyResult keyresult;
     private Date startDate;
     private Date endDate;
     private Date todaysDate;
-
-    private boolean completed;
 
     private String assignedTo;
 
@@ -17,22 +16,23 @@ public class OKR {
         startDate = Calendar.getInstance().getTime();
         todaysDate = Calendar.getInstance().getTime();
         endDate = deadline;
-        completed = false;
+        keyresult.markIncomplete();
         assignedTo = name;
 
     }
 
     public OKR() {
-        title = "";
+        objective.setTitle("");
+        keyresult.markIncomplete();
+        keyresult.setMetric("");
         startDate = Calendar.getInstance().getTime();
         endDate = null;
         todaysDate = Calendar.getInstance().getTime();
-        completed = false;
         assignedTo = "";
     }
 
     public void setTitle(String title){
-        this.title=title;
+        objective.setTitle(title);
     }
 
     public void setStartDate(Date date){
@@ -47,16 +47,12 @@ public class OKR {
         this.todaysDate = Calendar.getInstance().getTime();
     }
 
-    public void setCompleted(){
-        this.completed = true;
-    }
-
     public void setAssignedTo(String name){
         this.assignedTo = name;
     }
 
     public String getTitle(){
-        return this.title;
+        return objective.getTitle();
     }
 
     public Date getStartDate(){
@@ -69,10 +65,6 @@ public class OKR {
 
     public Date getTodaysDate(){
         return this.todaysDate;
-    }
-
-    public boolean isCompleted(){
-        return this.completed;
     }
 
     public String getAssignedTo(){
