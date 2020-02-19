@@ -90,7 +90,7 @@ public class OKR {
     }
 
     //REQUIRES: non-empty assigned team.
-    //EFFECTS: returns the name of the team that is assigned to this. 
+    //EFFECTS: returns the name of the team that is assigned to this.
     public String getAssignedTo(){
         return this.assignedTo;
     }
