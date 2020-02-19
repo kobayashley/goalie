@@ -12,15 +12,19 @@ public class OKR {
 
     private String assignedTo;
 
-    public OKR(Date deadline, String name){
+    //REQUIRES: deadline and team are non-empty values.
+    //EFFECTS: this with initialized deadline and assigned team.
+    public OKR(Date deadline, String team){
         startDate = Calendar.getInstance().getTime();
         todaysDate = Calendar.getInstance().getTime();
         endDate = deadline;
         keyresult.markIncomplete();
-        assignedTo = name;
+        assignedTo = team;
 
     }
 
+    //EFFECTS: this with initialized null title, metric, endDate, and assigned team, marked incomplete, and setting
+    // startDate to be today.
     public OKR() {
         objective.setTitle("");
         keyresult.markIncomplete();
@@ -31,42 +35,62 @@ public class OKR {
         assignedTo = "";
     }
 
+    //MODIFIES: this
+    //EFFECTS: this updated with objective's title.
     public void setTitle(String title){
         objective.setTitle(title);
     }
 
+    //MODIFIES: this
+    //EFFECTS: this updated with the OKR's start date.
     public void setStartDate(Date date){
         this.startDate = date;
     }
 
+    //MODIFIES: this
+    //EFFECTS: this updated with the OKR's end date.
     public void setEndDate(Date date){
         this.endDate = date;
     }
 
+    //MODIFIES: this
+    //EFFECTS: this updated with the OKR's current date.
     public void setTodaysDate(){
         this.todaysDate = Calendar.getInstance().getTime();
     }
 
+    //MODIFIES: this
+    //EFFECTS: this updated with OKR's assigned team.
     public void setAssignedTo(String name){
         this.assignedTo = name;
     }
 
+    //REQUIRES: non-empty objective title.
+    //EFFECTS: returns objective's title
     public String getTitle(){
         return objective.getTitle();
     }
 
+    //REQUIRES: non-empty OKR start date.
+    //EFFECTS: returns this start date.
     public Date getStartDate(){
         return this.startDate;
     }
 
+    //REQUIRES: non-empty end date.
+    //EFFECTS: returns this end date.
     public Date getEndDate(){
         return this.getEndDate();
     }
 
+    //REQUIRES: non-empty today's date.
+    //EFFECTS: returns today's date.
     public Date getTodaysDate(){
         return this.todaysDate;
     }
 
+    //REQUIRES: non-empty assigned team.
+    //EFFECTS: returns the name of the team that is assigned to this. 
     public String getAssignedTo(){
         return this.assignedTo;
     }
