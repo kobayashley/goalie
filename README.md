@@ -24,3 +24,16 @@ have print statements in each of the methods so that when you run the program,
  Draw the flowchart for a method with a condition or a loop
  Get user input, and reflect it back to the user
  Use the debugger
+
+ P3:
+ Abstraction and Testing
+
+ your code running, explaining what user input it takes, and what it does with it
+ your data abstraction code and be ready to justify the method specifications
+    DATA ABSTRACTION: Determine the public interface for that Class (the public methods), and the private implementation
+     (the private fields and helper methods).  These must be properly specified with REQUIRES/MODIFIES/EFFECTS clauses
+     in place.  Move everything out of your main method and all the static methods it uses into a class.
+     Change any static calls to object calls. (there is an example of that transformation at the bottom of that page)
+ your tests for your data abstraction
+    TEST THE DATA ABSTRACTION: Write a separate class that tests every method your data abstraction or data abstractions.
+
