@@ -12,11 +12,12 @@ public class Main {
     //Make a main method that gets things going
     static int OKRCount = 0;
     static ArrayList<OKR> listofOKRs = new ArrayList();
-    Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
 
 
     public static void main(String[] args) {
         System.out.println("getting things goin");
+        UserInput();
 
         Calendar deadlineCal = Calendar.getInstance();
 //        deadlineDate.set(2020, 02, 24); or
@@ -31,7 +32,7 @@ public class Main {
         OKR okr = new OKR(dateRepresentation, "Ashley");
         addOKR();
         listofOKRs.add(okr);
-        
+
         //Use a condition, and a loop
         if(countOKRs() == 0){
             System.out.println("This team currently has no OKRs");
@@ -53,8 +54,8 @@ public class Main {
     }
 
     //take user input
-    public void UserInput(){
-        String option = "";
+    public static void UserInput(){
+        String option = ""; //local variable
         while (scanner.hasNext()){
             System.out.println("Please select an option");
             System.out.println("add \n view \n quit");
@@ -71,11 +72,17 @@ public class Main {
                 System.out.println("OKR title has been set.");
                 listofOKRs.add(newOKR);
                 addOKR();
+                System.out.println("Continue? y/n");
+                option = scanner.nextLine();
+                if(option.equals("n")){
+                    break;
+                }
             }
 
             if(option.equals("view"));{
                 for(int i=0; i<listofOKRs.size(); i++){
-                    System.out.println(listofOKRs.get(i));
+                    System.out.println("list of current OKRs: ");
+                    System.out.println(listofOKRs.get(i).getTitle());
                 }
             }
 

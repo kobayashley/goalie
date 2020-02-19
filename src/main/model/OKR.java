@@ -51,4 +51,28 @@ public class OKR {
     public void setAssignedTo(String name){
         this.assignedTo = name;
     }
+
+    public String getTitle(){
+        return this.title;
+    }
+
+    public Date getStartDate(){
+        return this.startDate;
+    }
+
+    public Date getEndDate(){
+        return this.getEndDate();
+    }
+
+    public Date getTodaysDate(){
+        return this.todaysDate;
+    }
+
+    public boolean isCompleted(){
+        return this.completed;
+    }
+
+    public String getAssignedTo(){
+        return this.assignedTo;
+    }
 }
