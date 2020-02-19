@@ -8,7 +8,6 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
-    //Make a main method that gets things going
     static int OKRCount = 0;
     static ArrayList<OKR> listofOKRs = new ArrayList();
     static Scanner scanner = new Scanner(System.in);
@@ -25,14 +24,11 @@ public class Main {
 //        deadlineCal.set(Calendar.DAY_OF_MONTH, 24);
         Date dateRepresentation = deadlineCal.getTime();
 
-        //Construct an object (Note: this should probably happen within your main method)
-        //Pass a parameter
-        //Use a local variable
+
         OKR okr = new OKR(dateRepresentation, "Ashley");
         addOKR();
         listofOKRs.add(okr);
 
-        //Use a condition, and a loop
         if(countOKRs() == 0){
             System.out.println("This team currently has no OKRs");
         }
@@ -40,13 +36,11 @@ public class Main {
             System.out.println("This team has more than 5 OKRs! \n We recommend no more than 5 at a time.");
         }
 
-        //Return a value and use it
         System.out.println("The current number of OKRs for this team is " + countOKRs());
     }
 
-    //take user input
     public static void UserInput(){
-        String option = ""; //local variable
+        String option = ""; 
         while (scanner.hasNext()){
             System.out.println("Please select an option");
             System.out.println("\n add \n view \n quit");
@@ -73,7 +67,6 @@ public class Main {
                 }
             }
 
-            //use a local variable (loop variable)
             if(option.equals("view")){
                 System.out.println("list of current OKRs: ");
                 printTitlesListofOKRs();
