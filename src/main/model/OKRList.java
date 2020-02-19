@@ -10,7 +10,8 @@ public class OKRList {
     static ArrayList<OKR> listofOKRs = new ArrayList();
     static Scanner scanner = new Scanner(System.in);
 
-
+    //MODIFIES: this
+    //EFFECTS: starts the user interaction with this program.
     public static void start() {
         System.out.println("getting things goin");
         UserInput();
@@ -27,16 +28,18 @@ public class OKRList {
         addOKR();
         listofOKRs.add(okr);
 
-        if(countOKRs() == 0){
+        if(getCountOKRs() == 0){
             System.out.println("This team currently has no OKRs");
         }
-        if(countOKRs() >= 5){
+        if(getCountOKRs() >= 5){
             System.out.println("This team has more than 5 OKRs! \n We recommend no more than 5 at a time.");
         }
 
-        System.out.println("The current number of OKRs for this team is " + countOKRs());
+        System.out.println("The current number of OKRs for this team is " + getCountOKRs());
     }
 
+    //MODIFIES: this
+    //EFFECTS: takes user inputs and adds or prints OKRs, or quits to break.
     public static void UserInput(){
         String option = "";
         while (scanner.hasNext()){
@@ -78,17 +81,23 @@ public class OKRList {
 
     }
 
+    //REQUIRES: non-empty listofOKRs.
+    //EFFECTS: prints each OKR in the ListofOKRs.
     public static void printTitlesListofOKRs() {
         for(int i=0; i<listofOKRs.size(); i++){
             System.out.println(listofOKRs.get(i).getTitle());
         }
     }
 
+    //REQUIRES: a new OKR instance has been created.
+    //MODIFIES: OKRCount, which tracks the number of OKRs we currently have.
+    //EFFECTS: adds one to the OKRCount.
     public static void addOKR(){
         OKRCount++;
     }
 
-    public static int countOKRs(){
+    //EFFECTS: returns the current number of OKRs.
+    public static int getCountOKRs(){
         return OKRCount;
     }
 }

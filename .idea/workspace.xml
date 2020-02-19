@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bd8bd2-f54f-41da-b11a-351c6eed0d0c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/D3/D3-MessyZooStarter" afterPath="$PROJECT_DIR$/D3/D3-MessyZooStarter" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/KeyResult.java" afterPath="$PROJECT_DIR$/src/main/model/KeyResult.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/OKR.java" afterPath="$PROJECT_DIR$/src/main/model/OKR.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/Objective.java" afterPath="$PROJECT_DIR$/src/main/model/Objective.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/OKRList.java" afterPath="$PROJECT_DIR$/src/main/model/OKRList.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,28 +82,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OKRList.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OKRList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/model/OKRList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="131">
+              <caret line="41" column="76" lean-forward="false" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#450#494#0" expanded="false" />
-                <element signature="e#2703#2704#0" expanded="true" />
-                <element signature="e#2729#2730#0" expanded="true" />
-                <element signature="e#2765#2766#0" expanded="true" />
-                <element signature="e#2796#2797#0" expanded="true" />
+                <element signature="e#532#576#0" expanded="false" />
+                <element signature="e#3151#3152#0" expanded="true" />
+                <element signature="e#3177#3178#0" expanded="true" />
+                <element signature="e#3267#3268#0" expanded="true" />
+                <element signature="e#3298#3299#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Objective.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Objective.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/model/Objective.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="77" lean-forward="false" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
+            <state relative-caret-position="390">
+              <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding>
                 <element signature="e#200#201#0" expanded="true" />
                 <element signature="e#228#229#0" expanded="true" />
@@ -165,10 +164,10 @@
         <option value="$PROJECT_DIR$/src/main/ui/UserInput.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/ui/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/model/OKRList.java" />
         <option value="$PROJECT_DIR$/src/main/model/OKR.java" />
         <option value="$PROJECT_DIR$/src/main/model/Objective.java" />
         <option value="$PROJECT_DIR$/src/main/model/KeyResult.java" />
+        <option value="$PROJECT_DIR$/src/main/model/OKRList.java" />
       </list>
     </option>
   </component>
@@ -545,21 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/OKRList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#450#494#0" expanded="false" />
-            <element signature="e#2703#2704#0" expanded="true" />
-            <element signature="e#2729#2730#0" expanded="true" />
-            <element signature="e#2765#2766#0" expanded="true" />
-            <element signature="e#2796#2797#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/KeyResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -581,8 +565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/Objective.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="77" lean-forward="false" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
+        <state relative-caret-position="390">
+          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding>
             <element signature="e#200#201#0" expanded="true" />
             <element signature="e#228#229#0" expanded="true" />
@@ -592,6 +576,21 @@
             <element signature="e#500#501#0" expanded="true" />
             <element signature="e#669#670#0" expanded="true" />
             <element signature="e#705#706#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/model/OKRList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="41" column="76" lean-forward="false" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#532#576#0" expanded="false" />
+            <element signature="e#3151#3152#0" expanded="true" />
+            <element signature="e#3177#3178#0" expanded="true" />
+            <element signature="e#3267#3268#0" expanded="true" />
+            <element signature="e#3298#3299#0" expanded="true" />
           </folding>
         </state>
       </provider>
