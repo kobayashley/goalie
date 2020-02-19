@@ -5,11 +5,15 @@ import main.model.OKR;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Scanner;
 
 
 public class Main {
     //Make a main method that gets things going
     static int OKRCount = 0;
+    static ArrayList<OKR> listofOKRs = new ArrayList();
+    Scanner scanner = new Scanner(System.in);
+
 
     public static void main(String[] args) {
         System.out.println("getting things goin");
@@ -26,9 +30,8 @@ public class Main {
         //Use a local variable
         OKR okr = new OKR(dateRepresentation, "Ashley");
         addOKR();
-        ArrayList<OKR> listofOKRs = new ArrayList();
         listofOKRs.add(okr);
-
+        
         //Use a condition, and a loop
         if(countOKRs() == 0){
             System.out.println("This team currently has no OKRs");
@@ -47,6 +50,42 @@ public class Main {
 
         defineOKR();
         updateProgress();
+    }
+
+    //take user input
+    public void UserInput(){
+        String option = "";
+        while (scanner.hasNext()){
+            System.out.println("Please select an option");
+            System.out.println("add \n view \n quit");
+            option = scanner.nextLine();
+            System.out.println("you selected: "+option);
+
+            if (option.equals("add")) {
+                String title;
+                OKR newOKR = new OKR();
+                System.out.println("Please enter a title for this OKR");
+                title = scanner.nextLine();
+                System.out.println("you entered: " +title);
+                newOKR.setTitle(title);
+                System.out.println("OKR title has been set.");
+                listofOKRs.add(newOKR);
+                addOKR();
+            }
+
+            if(option.equals("view"));{
+                for(int i=0; i<listofOKRs.size(); i++){
+                    System.out.println(listofOKRs.get(i));
+                }
+            }
+
+            if (option.equals("quit")){
+                break;
+            }
+
+        }
+        System.out.println("Thank you! Good luck!");
+
     }
 
     public static void addOKR(){

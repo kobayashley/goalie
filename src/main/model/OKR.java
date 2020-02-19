@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class OKR {
     //Make at least one class named appropriately for your application
-
+    private String title;
     private Date startDate;
     private Date endDate;
     private Date todaysDate;
@@ -22,6 +22,14 @@ public class OKR {
         completed = false;
         assignedTo = name;
 
+    }
+
+    public OKR() {
+
+    }
+
+    public void setTitle(String title){
+        this.title=title;
     }
 
     public void setStartDate(Date date){
