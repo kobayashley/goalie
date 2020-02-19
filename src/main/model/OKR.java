@@ -4,7 +4,6 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class OKR {
-    //Make at least one class named appropriately for your application
     private String title;
     private Date startDate;
     private Date endDate;
@@ -15,7 +14,6 @@ public class OKR {
     private String assignedTo;
 
     public OKR(Date deadline, String name){
-        //Declare a field and use it (not necessarily at the same time!)
         startDate = Calendar.getInstance().getTime();
         todaysDate = Calendar.getInstance().getTime();
         endDate = deadline;
@@ -25,7 +23,12 @@ public class OKR {
     }
 
     public OKR() {
-
+        title = "";
+        startDate = Calendar.getInstance().getTime();
+        endDate = null;
+        todaysDate = Calendar.getInstance().getTime();
+        completed = false;
+        assignedTo = "";
     }
 
     public void setTitle(String title){

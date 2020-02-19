@@ -40,7 +40,7 @@ public class Main {
     }
 
     public static void UserInput(){
-        String option = ""; 
+        String option = "";
         while (scanner.hasNext()){
             System.out.println("Please select an option");
             System.out.println("\n add \n view \n quit");
