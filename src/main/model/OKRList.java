@@ -6,12 +6,12 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class OKRList {
-    static int OKRCount = 0;
-    static ArrayList<OKR> listofOKRs = new ArrayList();
-    static Scanner scanner = new Scanner(System.in);
+    int OKRCount = 0;
+    ArrayList<OKR> listofOKRs = new ArrayList();
+    Scanner scanner = new Scanner(System.in);
 
     //EFFECTS: starts the user interaction with this program.
-    public static void start() {
+    public void start() {
         System.out.println("getting things goin");
         UserInput();
 
@@ -38,7 +38,7 @@ public class OKRList {
     }
 
     //EFFECTS: takes user inputs and adds or prints OKRs, or quits to break.
-    public static void UserInput(){
+    public void UserInput(){
         String option = "";
         while (scanner.hasNext()){
             System.out.println("Please select an option");
@@ -81,7 +81,7 @@ public class OKRList {
 
     //REQUIRES: non-empty listofOKRs.
     //EFFECTS: prints each OKR in the ListofOKRs.
-    public static void printTitlesListofOKRs() {
+    public void printTitlesListofOKRs() {
         for(int i=0; i<listofOKRs.size(); i++){
             System.out.println(listofOKRs.get(i).getTitle());
         }
@@ -90,12 +90,12 @@ public class OKRList {
     //REQUIRES: a new OKR instance has been created.
     //MODIFIES: OKRCount, which tracks the number of OKRs we currently have.
     //EFFECTS: adds one to the OKRCount.
-    public static void addOKR(){
+    public void addOKR(){
         OKRCount++;
     }
 
     //EFFECTS: returns the current number of OKRs.
-    public static int getCountOKRs(){
+    public int getCountOKRs(){
         return OKRCount;
     }
 }
