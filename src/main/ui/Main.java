@@ -7,7 +7,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
-
 public class Main {
     //Make a main method that gets things going
     static int OKRCount = 0;
