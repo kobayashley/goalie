@@ -2,8 +2,10 @@ package main.ui;
 
 import main.model.OKR;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+
 
 public class Main {
     //Make a main method that gets things going
@@ -12,12 +14,11 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("getting things goin");
 
-        // todo: let user define a deadline for the task using Calendar/Date classes
         Calendar deadlineCal = Calendar.getInstance();
-//        deadlineDate.set(2020, 02, 24);
-        deadlineCal.set(Calendar.YEAR, 2020);
-        deadlineCal.set(Calendar.MONTH, Calendar.FEBRUARY);
-        deadlineCal.set(Calendar.DAY_OF_MONTH, 24);
+//        deadlineDate.set(2020, 02, 24); or
+//        deadlineCal.set(Calendar.YEAR, 2020);
+//        deadlineCal.set(Calendar.MONTH, Calendar.FEBRUARY);
+//        deadlineCal.set(Calendar.DAY_OF_MONTH, 24);
         Date dateRepresentation = deadlineCal.getTime();
 
         //Construct an object (Note: this should probably happen within your main method)
@@ -25,6 +26,9 @@ public class Main {
         //Use a local variable
         OKR okr = new OKR(dateRepresentation, "Ashley");
         addOKR();
+        ArrayList<OKR> listofOKRs = new ArrayList();
+        listofOKRs.add(okr);
+
         //Use a condition, and a loop
         if(countOKRs() == 0){
             System.out.println("This team currently has no OKRs");
@@ -33,9 +37,9 @@ public class Main {
         if(countOKRs() >= 5){
             System.out.println("This team has more than 5 OKRs! \n We recommend no more than 5 at a time.");
         }
-
-        for(int i=0; i<5; i++){
-            System.out.println(i);
+        //use a local variable (loop variable)
+        for(int i=0; i<listofOKRs.size(); i++){
+            System.out.println(listofOKRs.get(i));
         }
 
         //Return a value and use it
