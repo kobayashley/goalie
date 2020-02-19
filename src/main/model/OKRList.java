@@ -10,7 +10,6 @@ public class OKRList {
     static ArrayList<OKR> listofOKRs = new ArrayList();
     static Scanner scanner = new Scanner(System.in);
 
-    //MODIFIES: this
     //EFFECTS: starts the user interaction with this program.
     public static void start() {
         System.out.println("getting things goin");
@@ -38,7 +37,6 @@ public class OKRList {
         System.out.println("The current number of OKRs for this team is " + getCountOKRs());
     }
 
-    //MODIFIES: this
     //EFFECTS: takes user inputs and adds or prints OKRs, or quits to break.
     public static void UserInput(){
         String option = "";
