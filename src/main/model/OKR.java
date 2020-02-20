@@ -6,6 +6,7 @@ import java.util.Date;
 
 public class OKR {
     private Objective objective;
+
     private ArrayList<KeyResult> keyresults;
     private Date startDate;
     private Date endDate;
@@ -16,7 +17,9 @@ public class OKR {
     //EFFECTS: this with initialized null title, metric, endDate, and assigned team, marked incomplete, and setting
     //         startDate to be today.
     public OKR() {
+        objective = new Objective();
         objective.setTitle("");
+        keyresults = new ArrayList<KeyResult>();
         for(int i=0; i<keyresults.size(); i++){
             keyresults.get(i).markIncomplete();
         }
@@ -72,6 +75,18 @@ public class OKR {
         this.assignedTo = team;
     }
 
+    //REQUIRES: non-null Objective
+    //EFFECTS: returns this Objective
+    public Objective getObjective() {
+        return objective;
+    }
+
+    //REQUIRES: non-empty keyresults
+    //EFFECTS: returns this keyresults
+    public ArrayList<KeyResult> getKeyresults() {
+        return keyresults;
+    }
+
     //REQUIRES: non-empty objective title.
     //EFFECTS: returns objective's title
     public String getTitle(){
@@ -87,7 +102,7 @@ public class OKR {
     //REQUIRES: non-empty end date.
     //EFFECTS: returns this end date.
     public Date getEndDate(){
-        return this.getEndDate();
+        return this.endDate;
     }
 
     //REQUIRES: non-empty today's date.
