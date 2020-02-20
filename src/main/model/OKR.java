@@ -1,11 +1,12 @@
 package main.model;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
 public class OKR {
     private Objective objective;
-    private KeyResult keyresult;
+    private ArrayList<KeyResult> keyresults;
     private Date startDate;
     private Date endDate;
     private Date todaysDate;
@@ -18,7 +19,9 @@ public class OKR {
         startDate = Calendar.getInstance().getTime();
         todaysDate = Calendar.getInstance().getTime();
         endDate = deadline;
-        keyresult.markIncomplete();
+        for(int i=0; i<keyresults.size(); i++){
+            keyresults.get(i).markIncomplete();
+        }
         assignedTo = team;
 
     }
@@ -27,8 +30,12 @@ public class OKR {
     // startDate to be today.
     public OKR() {
         objective.setTitle("");
-        keyresult.markIncomplete();
-        keyresult.setMetric("");
+        for(int i=0; i<keyresults.size(); i++){
+            keyresults.get(i).markIncomplete();
+        }
+        for(int i=0; i<keyresults.size(); i++){
+            keyresults.get(i).setMetric("");
+        }
         startDate = Calendar.getInstance().getTime();
         endDate = null;
         todaysDate = Calendar.getInstance().getTime();
@@ -93,5 +100,14 @@ public class OKR {
     //EFFECTS: returns the name of the team that is assigned to this.
     public String getAssignedTo(){
         return this.assignedTo;
+    }
+
+    //EFFECTS: returns true if this OKR contains kr
+    public boolean containsKR(KeyResult kr){
+        if(keyresults.contains(kr)){
+            return true;
+        } else{
+            return false;
+        }
     }
 }

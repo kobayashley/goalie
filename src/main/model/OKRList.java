@@ -23,7 +23,7 @@ public class OKRList {
         Date dateRepresentation = deadlineCal.getTime();
 
 
-        OKR okr = new OKR(dateRepresentation, "Ashley");
+        OKR okr = new OKR(dateRepresentation, "Marketing");
         addOKR();
         listofOKRs.add(okr);
 
@@ -37,6 +37,7 @@ public class OKRList {
         System.out.println("The current number of OKRs for this team is " + getCountOKRs());
     }
 
+    //MODIFIES: this
     //EFFECTS: takes user inputs and adds or prints OKRs, or quits to break.
     public void UserInput(){
         String option = "";
