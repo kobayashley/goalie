@@ -13,21 +13,8 @@ public class OKR {
 
     private String assignedTo;
 
-    //REQUIRES: deadline and team are non-empty values.
-    //EFFECTS: this with initialized deadline and assigned team.
-    public OKR(Date deadline, String team){
-        startDate = Calendar.getInstance().getTime();
-        todaysDate = Calendar.getInstance().getTime();
-        endDate = deadline;
-        for(int i=0; i<keyresults.size(); i++){
-            keyresults.get(i).markIncomplete();
-        }
-        assignedTo = team;
-
-    }
-
     //EFFECTS: this with initialized null title, metric, endDate, and assigned team, marked incomplete, and setting
-    // startDate to be today.
+    //         startDate to be today.
     public OKR() {
         objective.setTitle("");
         for(int i=0; i<keyresults.size(); i++){
@@ -40,6 +27,19 @@ public class OKR {
         endDate = null;
         todaysDate = Calendar.getInstance().getTime();
         assignedTo = "";
+    }
+
+    //REQUIRES: deadline and team are non-empty values.
+    //EFFECTS: this with initialized deadline and assigned team.
+    public OKR(Date deadline, String team){
+        startDate = Calendar.getInstance().getTime();
+        todaysDate = Calendar.getInstance().getTime();
+        endDate = deadline;
+        for(int i=0; i<keyresults.size(); i++){
+            keyresults.get(i).markIncomplete();
+        }
+        assignedTo = team;
+
     }
 
     //MODIFIES: this
@@ -68,8 +68,8 @@ public class OKR {
 
     //MODIFIES: this
     //EFFECTS: this updated with OKR's assigned team.
-    public void setAssignedTo(String name){
-        this.assignedTo = name;
+    public void setAssignedTo(String team){
+        this.assignedTo = team;
     }
 
     //REQUIRES: non-empty objective title.
@@ -102,12 +102,25 @@ public class OKR {
         return this.assignedTo;
     }
 
+    //MODIFIES: this
+    //EFFECTS: adds kr into this OKR's list of krs if it does not already exist.
+    public void insertKR(KeyResult kr) {
+        if (!keyresults.contains(kr)) {
+            this.keyresults.add(kr);
+        } else {
+            return;
+        }
+    }
+
+    //MODIFIES: this
+    //EFFECTS: removes this kr if it is found in this OKR's list of krs.
+    public void removeKR(KeyResult kr){
+        this.keyresults.remove(kr);
+    }
+
     //EFFECTS: returns true if this OKR contains kr
     public boolean containsKR(KeyResult kr){
-        if(keyresults.contains(kr)){
-            return true;
-        } else{
-            return false;
+        return keyresults.contains(kr);
         }
     }
 }
