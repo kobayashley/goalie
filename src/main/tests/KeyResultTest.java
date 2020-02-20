@@ -29,6 +29,7 @@ public class KeyResultTest {
     @Test
     public void markCompletedAlreadyCompletedTest(){
         //check that kr is already marked completed
+        kr.markCompleted();
         assertTrue(kr.isCompleted());
         //mark it completed
         kr.markCompleted();
@@ -39,6 +40,7 @@ public class KeyResultTest {
     @Test
     public void markIncompleteAlreadyCompleteTest(){
         //check that kr is already marked completed
+        kr.markCompleted();
         assertTrue(kr.isCompleted());
         //mark it incomplete
         kr.markIncomplete();

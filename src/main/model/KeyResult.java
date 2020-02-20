@@ -5,7 +5,10 @@ public class KeyResult {
     private boolean completed;
     private String metric;
 
-
+    public KeyResult(){
+        completed = false;
+        metric = "";
+    }
 
     //MODIFIES: this
     //EFFECTS: this updated with completed flag.
