@@ -59,10 +59,10 @@ public class OKRList {
                 addOKR();
 
                 System.out.println("Continue? y/n");
-                if(option.equals("n")){
+                String yesno = scanner.nextLine();
+                if(yesno.equals("n")){
                     break;
-                }
-                else{
+                } else {
                     option = scanner.nextLine();
                 }
             }
@@ -71,7 +71,7 @@ public class OKRList {
                 System.out.println("list of current OKRs: ");
                 printTitlesListofOKRs();
             }
-            if (option.equals("quit")){
+            if(option.equals("quit")){
                 break;
             }
 

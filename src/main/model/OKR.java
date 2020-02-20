@@ -19,7 +19,7 @@ public class OKR {
     public OKR() {
         objective = new Objective();
         objective.setTitle("");
-        keyresults = new ArrayList<KeyResult>();
+        keyresults = new ArrayList<>();
         for(int i=0; i<keyresults.size(); i++){
             keyresults.get(i).markIncomplete();
         }
@@ -33,13 +33,16 @@ public class OKR {
     }
 
     //REQUIRES: deadline and team are non-empty values.
-    //EFFECTS: this with initialized deadline and assigned team.
+    //EFFECTS: this updated with initialized deadline and assigned team.
     public OKR(Date deadline, String team){
         startDate = Calendar.getInstance().getTime();
         todaysDate = Calendar.getInstance().getTime();
         endDate = deadline;
-        for(int i=0; i<keyresults.size(); i++){
-            keyresults.get(i).markIncomplete();
+        keyresults = new ArrayList<>();
+        for(int i=0; i<keyresults.size(); i++) {
+            if (!getKeyresults().isEmpty()) {
+                keyresults.get(i).markIncomplete();
+            }
         }
         assignedTo = team;
 
