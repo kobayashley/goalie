@@ -4,6 +4,11 @@ public class Objective {
     private String title;
     private boolean priority;
 
+    public Objective(){
+        title = "";
+        priority = false;
+    }
+
     //REQUIRES: non-empty title.
     //EFFECTS: returns this title.
     public String getTitle() {
