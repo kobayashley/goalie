@@ -19,72 +19,51 @@ public class ObjectiveTest {
 
     @Test
     public void setTitleFromEmptyTest(){
-        //check that title is empty as initialized
         assertEquals(ob.getTitle(),"");
-        //call setTitle
         ob.setTitle(testTitle);
-        //check that ob's title equals what we set it to
         assertEquals(ob.getTitle(), testTitle);
     }
 
     @Test
     public void setTitleFromNonEmptyTest(){
-        //check that title is empty as initialized
         assertEquals(ob.getTitle(), "");
-        //call setTitle
         ob.setTitle(testTitle);
-        //check that ob's title equals what we set it to
         assertEquals(ob.getTitle(), testTitle);
-        //call setTitle to a different title
         ob.setTitle(testTitle);
-        //check that ob's title equals the second title
-        assertEquals(ob.getTitle(), testTitle;
+        assertEquals(ob.getTitle(), testTitle);
     }
 
     @Test
     public void getTitleTest(){
-        //check that title is empty as initialized
         assertEquals(ob.getTitle(), "");
-        //call setTitle
         ob.setTitle(testTitle);
-        //check that ob's title equals what we set it to
         assertEquals(ob.getTitle(), testTitle);
     }
 
     @Test
     public void setPriorityFromFalseTest(){
-        //check that ob is not set as priority
         assertFalse(ob.isPriority());
-        //call set priority
         checkObIsPriority();
     }
 
     @Test
     public void setPriorityFromTrueTest(){
-        //set and check that ob is set as priority already
         checkObIsPriority();
-        //call set priority
         checkObIsPriority();
     }
 
     @Test
     public void setNotPriorityFromTrueTest(){
-        //check that ob is set as priority already
         checkObIsPriority();
-        //call set not priority
         ob.setNotPriority();
-        //check that ob is now set as not a priority
         assertFalse(ob.isPriority());
     }
 
 
     @Test
     public void setNotPriorityFromFalseTest(){
-        //check that ob s set as not priority already
         assertFalse(ob.isPriority());
-        //call set not priority
         ob.setNotPriority();
-        //check that ob is still not set as a priority
         assertFalse(ob.isPriority());
     }
 
