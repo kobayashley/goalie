@@ -4,6 +4,7 @@ import main.model.KeyResult;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -57,29 +58,35 @@ public class KeyResultTest {
 
     @Test
     public void isCompletedTrueTest(){
+        kr.markCompleted();
         //check that kr is already marked complete
-        //ask if this kr is marked complete
-        //check that true is returned
+        assertTrue(kr.isCompleted());
+
     }
 
     @Test
     public void isCompletedFalseTest(){
-        //check that kr is already marked incomplete
-        //ask if this kr is marked complete
-        //check that false is returned
+        kr.markIncomplete();
+        assertFalse(kr.isCompleted());
     }
 
     @Test
     public void setMetricFromEmptyTest(){
         //check that kr has an empty metric
+        assertEquals(kr.getMetric(), "");
         //set the metric to something
+        kr.setMetric("test metric");
         //check that kr's metric has been set to that.
+        assertEquals(kr.getMetric(), "test metric");
     }
 
     @Test
     public void getMetricTest(){
-        //check that kr's metric is not empty
-        //ask fo the metric
-        //check that the returned metric matches what we set it to.
+        //check that kr has an empty metric
+        assertEquals(kr.getMetric(), "");
+        //set the metric to something
+        kr.setMetric("test metric");
+        //check that kr's metric has been set to that.
+        assertEquals(kr.getMetric(), "test metric");
     }
 }
