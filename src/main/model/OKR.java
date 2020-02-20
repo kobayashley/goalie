@@ -122,5 +122,4 @@ public class OKR {
     public boolean containsKR(KeyResult kr){
         return keyresults.contains(kr);
         }
-    }
 }

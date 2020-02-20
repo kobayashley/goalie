@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bd8bd2-f54f-41da-b11a-351c6eed0d0c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/OKRTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/model/OKR.java" afterPath="$PROJECT_DIR$/src/main/model/OKR.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,8 +55,8 @@
       <file leaf-file-name="OKR.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/model/OKR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="112" column="5" lean-forward="true" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
+            <state relative-caret-position="1795">
+              <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1446#1447#0" expanded="true" />
@@ -93,8 +91,8 @@
       <file leaf-file-name="OKRTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/tests/OKRTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1650">
-              <caret line="110" column="50" lean-forward="false" selection-start-line="110" selection-start-column="50" selection-end-line="110" selection-end-column="50" />
+            <state relative-caret-position="435">
+              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,8 +172,8 @@
         <option value="$PROJECT_DIR$/src/main/tests/KeyResultTest.java" />
         <option value="$PROJECT_DIR$/src/main/model/Objective.java" />
         <option value="$PROJECT_DIR$/src/main/tests/ObjectiveTest.java" />
-        <option value="$PROJECT_DIR$/src/main/model/OKR.java" />
         <option value="$PROJECT_DIR$/src/main/tests/OKRTest.java" />
+        <option value="$PROJECT_DIR$/src/main/model/OKR.java" />
       </list>
     </option>
   </component>
@@ -661,8 +659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/OKR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="112" column="5" lean-forward="true" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
+        <state relative-caret-position="1795">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1446#1447#0" expanded="true" />
@@ -695,8 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/tests/OKRTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="110" column="50" lean-forward="false" selection-start-line="110" selection-start-column="50" selection-end-line="110" selection-end-column="50" />
+        <state relative-caret-position="435">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
