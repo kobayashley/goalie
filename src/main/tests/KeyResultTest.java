@@ -4,6 +4,9 @@ import main.model.KeyResult;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class KeyResultTest {
     KeyResult kr;
 
@@ -15,8 +18,11 @@ public class KeyResultTest {
     @Test
     public void markCompletedNotAlreadyCompletedTest(){
         //check that kr is not marked completed already
+        assertFalse(kr.isCompleted());
         //mark it completed
+        kr.markCompleted();
         //check that kr is now marked completed
+        assertTrue(kr.isCompleted());
     }
 
     @Test
