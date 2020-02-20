@@ -27,6 +27,12 @@ public class Objective {
         this.priority=true;
     }
 
+    //MODIFIES: this
+    //EFFECTS: this updated without priority flag.
+    public void setNotPriority(){
+        this.priority=false;
+    }
+
     //REQUIRES: non-null priority value (true or false).
     //EFFECTS: returns true if this objective is a priority, false otherwise.
     public boolean isPriority(){
