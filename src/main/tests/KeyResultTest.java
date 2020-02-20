@@ -38,8 +38,11 @@ public class KeyResultTest {
     @Test
     public void markIncompleteAlreadyCompleteTest(){
         //check that kr is already marked completed
+        assertTrue(kr.isCompleted());
         //mark it incomplete
+        kr.markIncomplete();
         //check that kr is now marked incomplete
+        assertFalse(kr.isCompleted());
     }
 
     @Test
