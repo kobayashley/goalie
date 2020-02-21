@@ -30,7 +30,41 @@ public class OKRListTest {
     }
 
     @Test
-    public void printTitlesListofOKRsTest() {
+    public void reportCountOKRsZeroTest(){
+        //check that OKRCount is initialized to0
+        //check that OKRCount is equal to 0
+        //check that reportCountOKRs correctly reports 0
+    }
 
+    @Test
+    public void reportCountOKRsTwoTest(){
+        //check that OKRCount is initialized to 0
+        //add OKRs to 2
+        //check that OKRCount is equal to 2
+        //check that reportCountOKRs correctly reports 2
+    }
+
+    @Test
+    public void reportCountOKRsFiveTest(){
+        //check that OKRCount is initialized to 0
+        //add OKRs to 5
+        //check that OKRCount is equal to 5
+        //check that reportCountOKRs correctly reports 5
+    }
+
+    @Test
+    public void reportCountOKRsSevenTest(){
+        //check that OKRCount is initialized to 0
+        //add OKRs to 7
+        //check that OKRCount is equal to 7
+        //check that reportCountOKRs correctly reports 7
+    }
+
+    @Test
+    public void printTitlesListofOKRsTest() {
+        //listofOKR has one OKR
+        //check that size of listofOKR is 1
+        //call method
+        //check that what was printed is what we wanted to print
     }
 }
