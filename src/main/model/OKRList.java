@@ -86,6 +86,9 @@ public class OKRList {
             return false;
         } else if (yesno == "y") {
             return true;
+        } else {
+            System.out.println("error");
+            return false;
         }
     }
 

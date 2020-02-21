@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bd8bd2-f54f-41da-b11a-351c6eed0d0c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/model/OKRList.java" afterPath="$PROJECT_DIR$/src/main/model/OKRList.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,14 +39,14 @@
       <file leaf-file-name="OKRList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/model/OKRList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+            <state relative-caret-position="195">
+              <caret line="89" column="32" lean-forward="true" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3243#3244#0" expanded="true" />
-                <element signature="e#3269#3270#0" expanded="true" />
-                <element signature="e#3352#3353#0" expanded="true" />
-                <element signature="e#3383#3384#0" expanded="true" />
+                <element signature="e#3327#3328#0" expanded="true" />
+                <element signature="e#3353#3354#0" expanded="true" />
+                <element signature="e#3436#3437#0" expanded="true" />
+                <element signature="e#3467#3468#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -783,14 +784,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/OKRList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        <state relative-caret-position="195">
+          <caret line="89" column="32" lean-forward="true" selection-start-line="89" selection-start-column="32" selection-end-line="89" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3243#3244#0" expanded="true" />
-            <element signature="e#3269#3270#0" expanded="true" />
-            <element signature="e#3352#3353#0" expanded="true" />
-            <element signature="e#3383#3384#0" expanded="true" />
+            <element signature="e#3327#3328#0" expanded="true" />
+            <element signature="e#3353#3354#0" expanded="true" />
+            <element signature="e#3436#3437#0" expanded="true" />
+            <element signature="e#3467#3468#0" expanded="true" />
           </folding>
         </state>
       </provider>
