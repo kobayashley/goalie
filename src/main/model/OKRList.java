@@ -32,21 +32,17 @@ public class OKRList {
 
             if (option.equals("add")) {
                 uiAddOption();
-
                 if(!uiContinue()){
                     break;
                 }
             }
-
             if (option.equals("view")) {
                 System.out.println("list of current OKRs: ");
                 printTitlesListofOKRs();
             }
-
             if (option.equals("quit")) {
                 break;
             }
-
         }
         System.out.println("Thank you! Good luck!");
 
@@ -125,15 +121,4 @@ public class OKRList {
         return "The current number of OKRs for this team is " + getCountOKRs();
     }
 }
-
-//System.out.println("Continue? y/n");
-//        String yesno = scanner.next();
-//        if (yesno.equals("n")) {
-//        break;
-//        } else {
-//        option = scanner.next();
-//        return;
-//        }
-
-
 
