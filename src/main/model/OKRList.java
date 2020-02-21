@@ -31,7 +31,8 @@ public class OKRList {
 
             if (option.equals("add")) {
                 uiAddOption();
-                if(!uiContinue()){
+                String yesno = scanner.next();
+                if(!uiContinue(yesno)){
                     break;
                 }
             }
@@ -74,9 +75,10 @@ public class OKRList {
         addToCountOKR();
     }
 
-    public boolean uiContinue() {
+    //REQUIRES: param String yesno has received scanner's next
+    //EFFECTS: returns true if user has inputted "y", and false if user has inputted "n" or anything else.
+    public boolean uiContinue(String yesno) {
         System.out.println("Continue? y/n");
-        String yesno = scanner.next();
         if (yesno == "n"){
             return false;
         } else if (yesno == "y") {
@@ -122,10 +124,13 @@ public class OKRList {
         return "The current number of OKRs for this team is " + getCountOKRs();
     }
 
+    //EFFECTs: returns this OKRCount
     public int getOKRCount() {
         return OKRCount;
     }
 
+    //REQUIRES: non-empty listofOKRs
+    //EFFECTS: returns this listofOKRs
     public ArrayList<OKR> getListofOKRs() {
         return listofOKRs;
     }

@@ -20,15 +20,25 @@ public class OKRListTest {
         scanner = new Scanner(System.in);
     }
 
-//    @Test
-//    public void startTest() {
-//
-//    }
-//
-//    @Test
-//    public void UserInputTest() {
-//
-//    }
+
+    @Test
+    public void uiContinueNoTest(){
+        String yesnotest = "n";
+        assertEquals(false, okrList.uiContinue(yesnotest));
+    }
+
+    @Test
+    public void uiContinueYesTest(){
+        String yesnotest = "y";
+        assertEquals(true, okrList.uiContinue(yesnotest));
+    }
+
+    @Test
+    public void uiContinueErrortest(){
+        String yesnotest = "gibberish";
+        assertEquals(false, okrList.uiContinue(yesnotest));
+
+    }
 
     @Test
     public void reportCountOKRsZeroTest(){
@@ -80,4 +90,15 @@ public class OKRListTest {
         assertEquals("", okrList.printTitlesListofOKRs().get(0));
 
     }
+
+
+//    @Test
+//    public void startTest() {
+//
+//    }
+//
+//    @Test
+//    public void UserInputTest() {
+//
+//    }
 }
