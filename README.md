@@ -37,3 +37,34 @@ have print statements in each of the methods so that when you run the program,
  your tests for your data abstraction
     TEST THE DATA ABSTRACTION: Write a separate class that tests every method your data abstraction or data abstractions.
 
+P5:
+Abstracts and Extends
+
+NTRODUCE A NEW CLASS: Introduce a second class into your design (if you only had one before) that is a variation on
+ an existing class.  For instance, with the ToDo list, if you originally had only one kind of ToDo Item, now you might
+ add an UrgentItem.  You may also rename your original "Item" to be "RegularItem", to better define it.  You would need
+ to give the UrgentItem some data or behaviour that isn't present in a RegularItem.
+
+INTRODUCE AN ABSTRACT CLASS:  You must introduce at least one abstract class. The abstract class should have at least
+ one abstract method.  The abstract class should hold the behaviour and data that your two other classes have in common.
+  For the ToDo list example, you might now introduce an "Item" abstract class that holds the data and common behaviour
+  for RegularItems and UrgentItems.
+
+INTRODUCE AN EXTENDS RELATIONSHIP: Both of your base implementation classes should extend the new Abstract class.
+They should override at least one method in the abstract class, and provide the implementation for the abstract method.
+ For instance, the abstract method in the Item class for the ToDo List application might be "complete".
+ Both RegularItem and UrgentItem would need to implement the "complete" method. Note: It's possible that the Abstract
+  class needs to implement the interface that was once implemented by your original class (from the previous phase),
+   so rather than your classes declaring which interface(s) they implement the abstract class can declare the
+    implements relationship.   That way both your base classes are implementing the interface(s).
+
+INTEGRATE THE NEW BEHAVIOUR: You should integrate the behaviour provided by your new class into the system's
+interaction loop.  In the ToDoList application, the user would now be prompted as to whether they wanted to make an
+urgent item or a regular item. The loop would then instantiate the right type depending what the user selects.
+ If you have declared the variable to have an apparent type that is the Abstract Class (or even a higher level
+ interface) your code can then call all the methods it needs to on that object regardless of which actual type it is.
+
+Getting .7: If you do a minimal job of the above, and have poor naming and structure, then you will obtain a .7
+
+Getting 1: If you add more subclassing, overriding or overloading, or have particularly clean code with good naming,
+ or nice  abstraction (meaning low duplication between your classes) then you'll get a 1.
