@@ -28,29 +28,13 @@ public class OKRList {
     public void UserInput() {
         String option = "";
         while (scanner.hasNext()) {
-            System.out.println("Please select an option");
-            System.out.println("\n add \n view \n quit");
-            option = scanner.nextLine();
-            System.out.println("you selected: " + option);
+            option = getUIOption();
 
             if (option.equals("add")) {
-                String title;
-                OKR newOKR = new OKR();
-                addToCountOKR();
-                System.out.println("Please enter a title for this OKR");
-                title = scanner.nextLine();
-                System.out.println("you entered: " + title);
-                newOKR.setTitle(title);
-                System.out.println("OKR title has been set.");
-                listofOKRs.add(newOKR);
-                addToCountOKR();
+                uiAddOption();
 
-                System.out.println("Continue? y/n");
-                String yesno = scanner.next();
-                if (yesno.equals("n")) {
+                if(!uiContinue()){
                     break;
-                } else {
-                    option = scanner.next();
                 }
             }
 
@@ -58,6 +42,7 @@ public class OKRList {
                 System.out.println("list of current OKRs: ");
                 printTitlesListofOKRs();
             }
+
             if (option.equals("quit")) {
                 break;
             }
@@ -65,6 +50,43 @@ public class OKRList {
         }
         System.out.println("Thank you! Good luck!");
 
+    }
+
+    //MODIFIES: option
+    //EFFECTS: asks for user to select from a pre-determined menu, and print the feedback for what was selected.
+    public String getUIOption() {
+        String option;
+        System.out.println("Please select an option");
+        System.out.println("\n add \n view \n quit");
+        option = scanner.nextLine();
+        System.out.println("you selected: " + option);
+        return option;
+    }
+
+    //REQUIRES: user input has selected "add"
+    //MODIFIES: title, newOKR, OKRcount, listofOKRs
+    //EFFECTS:  creates a new OKR and sets its title to the inputted title, adds this OKR to the listofOKRs in this list
+    //          and increments the OKRCount.
+    public void uiAddOption() {
+        String title;
+        OKR newOKR = new OKR();
+        System.out.println("Please enter a title for this OKR");
+        title = scanner.nextLine();
+        System.out.println("you entered: " + title);
+        newOKR.setTitle(title);
+        System.out.println("OKR title has been set.");
+        listofOKRs.add(newOKR);
+        addToCountOKR();
+    }
+
+    public boolean uiContinue() {
+        System.out.println("Continue? y/n");
+        String yesno = scanner.next();
+        if (yesno == "n"){
+            return false;
+        } else if (yesno == "y") {
+            return true;
+        }
     }
 
     //REQUIRES: non-empty listofOKRs.
@@ -100,5 +122,15 @@ public class OKRList {
         return "The current number of OKRs for this team is " + getCountOKRs();
     }
 }
+
+//System.out.println("Continue? y/n");
+//        String yesno = scanner.next();
+//        if (yesno.equals("n")) {
+//        break;
+//        } else {
+//        option = scanner.next();
+//        return;
+//        }
+
 
 
