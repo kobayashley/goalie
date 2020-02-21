@@ -88,7 +88,7 @@ public class OKRList {
     }
 
     //REQUIRES: non-empty listofOKRs.
-    //EFFECTS: prints each OKR in the ListofOKRs.
+    //EFFECTS: returns ArrayList of titles of each OKR in the ListofOKRs.
     public ArrayList<String> printTitlesListofOKRs() {
         ArrayList<String> titles = new ArrayList();
         for (int i = 0; i < listofOKRs.size(); i++) {
