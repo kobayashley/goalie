@@ -19,7 +19,6 @@ public class OKRList {
 //        deadlineCal.set(Calendar.MONTH, Calendar.FEBRUARY);
 //        deadlineCal.set(Calendar.DAY_OF_MONTH, 24);
         //Date dateRepresentation = deadlineCal.getTime();
-
         System.out.println(reportCountOKRs());
     }
 
@@ -38,7 +37,7 @@ public class OKRList {
             }
             if (option.equals("view")) {
                 System.out.println("list of current OKRs: ");
-                printTitlesListofOKRs();
+                System.out.println(printTitlesListofOKRs());
             }
             if (option.equals("quit")) {
                 break;
@@ -90,10 +89,12 @@ public class OKRList {
 
     //REQUIRES: non-empty listofOKRs.
     //EFFECTS: prints each OKR in the ListofOKRs.
-    public void printTitlesListofOKRs() {
+    public ArrayList<String> printTitlesListofOKRs() {
+        ArrayList<String> titles = new ArrayList();
         for (int i = 0; i < listofOKRs.size(); i++) {
-            System.out.println(listofOKRs.get(i).getTitle());
+            titles.add(listofOKRs.get(i).getTitle());
         }
+        return titles;
     }
 
     //REQUIRES: a new OKR instance has been created.
@@ -114,11 +115,20 @@ public class OKRList {
         if (getCountOKRs() == 0) {
             return "This team currently has no OKRs";
         }
-        if (getCountOKRs() >= 5) {
+        if (getCountOKRs() > 5) {
             return "This team has more than 5 OKRs! \n We recommend no more than 5 at a time.";
         }
 
         return "The current number of OKRs for this team is " + getCountOKRs();
     }
+
+    public int getOKRCount() {
+        return OKRCount;
+    }
+
+    public ArrayList<OKR> getListofOKRs() {
+        return listofOKRs;
+    }
+
 }
 
