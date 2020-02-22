@@ -1,7 +1,7 @@
 package main.tests;
 
 import main.model.RegularKeyResult;
-import main.model.OKR;
+import main.model.RegularOKR;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,8 +12,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class OKRTest {
-    OKR okr;
+public class RegularOKRTest {
+    RegularOKR regularOkr;
     String testTitle;
     String newTitle = "new title";
     Date testDate;
@@ -23,7 +23,7 @@ public class OKRTest {
 
     @BeforeEach
     public void setup(){
-        okr = new OKR();
+        regularOkr = new RegularOKR();
         testTitle = "test title";
         testDate = new Date();
         testDate.setTime(3567);
@@ -35,133 +35,133 @@ public class OKRTest {
     @Test
     public void setTitleFromEmptyTest(){
         //check title is empty as initialized
-        assertEquals("", okr.getTitle());
+        assertEquals("", regularOkr.getTitle());
         //set title
-        okr.setTitle(testTitle);
+        regularOkr.setTitle(testTitle);
         //check that title is now set
-        assertEquals(testTitle, okr.getTitle());
+        assertEquals(testTitle, regularOkr.getTitle());
     }
 
     @Test
     public void setTitleFromNonEmptyTest(){
         //check title is empty as initialized
-        assertEquals("", okr.getTitle());
+        assertEquals("", regularOkr.getTitle());
         //set title
-        okr.setTitle(testTitle);
+        regularOkr.setTitle(testTitle);
         //check that title is now set
-        assertEquals(testTitle, okr.getTitle());
+        assertEquals(testTitle, regularOkr.getTitle());
         //set new title
-        okr.setTitle(newTitle);
+        regularOkr.setTitle(newTitle);
         //check that title is now set to the new title
-        assertEquals(newTitle, okr.getTitle());
+        assertEquals(newTitle, regularOkr.getTitle());
     }
 
     @Test
     public void setStartDateTest(){
         //check startDate is initialized to today
-        assertEquals(Calendar.getInstance().getTime().toString(), okr.getStartDate().toString());
+        assertEquals(Calendar.getInstance().getTime().toString(), regularOkr.getStartDate().toString());
         //call set start date to test date
-        okr.setStartDate(testDate);
+        regularOkr.setStartDate(testDate);
         //check that startdate is now test date
-        assertEquals(testDate.toString(), okr.getStartDate().toString());
+        assertEquals(testDate.toString(), regularOkr.getStartDate().toString());
     }
 
     @Test
     public void setEndDateTest(){
         //check that end date is initialized to null
-        assertEquals(null, okr.getEndDate());
+        assertEquals(null, regularOkr.getEndDate());
         //call set end date to test date
-        okr.setEndDate(testDate);
+        regularOkr.setEndDate(testDate);
         //check that end date is now test date
-        assertEquals(testDate, okr.getEndDate());
+        assertEquals(testDate, regularOkr.getEndDate());
     }
 
     @Test
     public void setTodaysDateTest(){
         //check startDate is initialized to today
-        assertEquals(Calendar.getInstance().getTime().toString(), okr.getTodaysDate().toString());
+        assertEquals(Calendar.getInstance().getTime().toString(), regularOkr.getTodaysDate().toString());
     }
 
     @Test
     public void setAssignedToFromEmptyTest(){
         //check assignedTo is empty string as initialized
-        assertEquals("", okr.getAssignedTo());
+        assertEquals("", regularOkr.getAssignedTo());
         //call set assigned to a team
-        okr.setAssignedTo(team);
+        regularOkr.setAssignedTo(team);
         //check that assignedTo is now equal to team
-        assertEquals(team, okr.getAssignedTo());
+        assertEquals(team, regularOkr.getAssignedTo());
     }
 
     @Test
     public void setAssignedToFromNonEmptyTest(){
         //check assignedTo is empty string as initialized
-        assertEquals("", okr.getAssignedTo());
+        assertEquals("", regularOkr.getAssignedTo());
         //call set assigned to a team
-        okr.setAssignedTo(team);
+        regularOkr.setAssignedTo(team);
         //check that assignedTo is now equal to team
-        assertEquals(team, okr.getAssignedTo());
+        assertEquals(team, regularOkr.getAssignedTo());
         //call set assigned to a new team
-        okr.setAssignedTo(newTeam);
+        regularOkr.setAssignedTo(newTeam);
         //check that assignedTo is now equal to new team
-        assertEquals(newTeam, okr.getAssignedTo());
+        assertEquals(newTeam, regularOkr.getAssignedTo());
     }
 
     @Test
     public void insertKRNotAlreadyThereTest(){
         //check that keyresults is empty as initialized
-        assertTrue(okr.getKeyresults().isEmpty());
+        assertTrue(regularOkr.getKeyresults().isEmpty());
         //call insertKR to insert a test KR into the arraylist
         kr.setMetric("testmetric");
-        okr.insertKR(kr);
+        regularOkr.insertKR(kr);
         //check that keyresults now contains the test KR
-        assertTrue(okr.getKeyresults().contains(kr));
+        assertTrue(regularOkr.getKeyresults().contains(kr));
         //check that keyresults is size 1
-        assertEquals(1, okr.getKeyresults().size());
+        assertEquals(1, regularOkr.getKeyresults().size());
 
     }
 
     @Test
     public void insertKRAlreadyThereTest(){
         //check that keyresults is empty as initialized
-        assertTrue(okr.getKeyresults().isEmpty());
+        assertTrue(regularOkr.getKeyresults().isEmpty());
         //call insertKR to insert a test KR into the arraylist
         kr.setMetric("testmetric");
-        okr.insertKR(kr);
+        regularOkr.insertKR(kr);
         //check that keyresults now contains the test KR
-        assertTrue(okr.getKeyresults().contains(kr));
+        assertTrue(regularOkr.getKeyresults().contains(kr));
         //check that keyresults is size 1
-        assertEquals(1, okr.getKeyresults().size());
+        assertEquals(1, regularOkr.getKeyresults().size());
         //call insertKR to insert the same test KR
-        okr.insertKR(kr);
+        regularOkr.insertKR(kr);
         //check that the second test KR was not added ie it is in keyresults only once
-        assertEquals(1, okr.getKeyresults().size());
+        assertEquals(1, regularOkr.getKeyresults().size());
     }
 
     @Test
     public void containsKRTrueTest(){
         //check that kr is empty as initialized
-        assertEquals(0 , okr.getKeyresults().size());
+        assertEquals(0 , regularOkr.getKeyresults().size());
         //call insertKR to insert a test KR into the arraylist
         kr.setMetric("testmetric");
-        okr.insertKR(kr);
+        regularOkr.insertKR(kr);
         //check that keyresults now contains the test KR
-        assertTrue(okr.getKeyresults().contains(kr));
+        assertTrue(regularOkr.getKeyresults().contains(kr));
         //check that keyresults is size 1
-        assertEquals(1, okr.getKeyresults().size());
+        assertEquals(1, regularOkr.getKeyresults().size());
         //call containsKR
         //check containsKR correctly returns true
-        assertTrue(okr.containsKR(kr));
+        assertTrue(regularOkr.containsKR(kr));
 
     }
 
     @Test
     public void containsKRFalseTest(){
         //check that kr is empty as initialized
-        assertTrue(okr.getKeyresults().isEmpty());
+        assertTrue(regularOkr.getKeyresults().isEmpty());
         //check that keyresults is size 0, empty
-        assertEquals(0, okr.getKeyresults().size());
+        assertEquals(0, regularOkr.getKeyresults().size());
         //call containsKR
         //check containsKR correctly returns false
-        assertFalse(okr.containsKR(kr));
+        assertFalse(regularOkr.containsKR(kr));
     }
 }

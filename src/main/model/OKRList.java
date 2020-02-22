@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class OKRList {
     int OKRCount = 0;
-    ArrayList<OKR> listofOKRs = new ArrayList();
+    ArrayList<RegularOKR> listofRegularOKRS = new ArrayList();
     Scanner scanner = new Scanner(System.in);
 
     //EFFECTS: starts the user interaction with this program.
@@ -60,18 +60,20 @@ public class OKRList {
     }
 
     //REQUIRES: user input has selected "add"
-    //MODIFIES: title, newOKR, OKRcount, listofOKRs
-    //EFFECTS:  creates a new OKR and sets its title to the inputted title, adds this OKR to the listofOKRs in this list
+    //MODIFIES: title, newOKR, OKRcount, listofRegularOKRS
+    //EFFECTS:  creates a new RegularOKR and sets its title to the inputted title, adds this RegularOKR to the listofRegularOKRS in this list
     //          and increments the OKRCount.
     public void uiAddOption() {
         String title;
-        OKR newOKR = new OKR();
-        System.out.println("Please enter a title for this OKR");
+        RegularOKR newRegularOKR = new RegularOKR();
+        System.out.println("Would you like to add a new Regular RegularOKR or a Moonshot RegularOKR?");
+        //todo
+        System.out.println("Please enter a title for this RegularOKR");
         title = scanner.nextLine();
         System.out.println("you entered: " + title);
-        newOKR.setTitle(title);
-        System.out.println("OKR title has been set.");
-        listofOKRs.add(newOKR);
+        newRegularOKR.setTitle(title);
+        System.out.println("RegularOKR title has been set.");
+        listofRegularOKRS.add(newRegularOKR);
         addToCountOKR();
     }
 
@@ -89,17 +91,17 @@ public class OKRList {
         }
     }
 
-    //REQUIRES: non-empty listofOKRs.
-    //EFFECTS: returns ArrayList of titles of each OKR in the ListofOKRs.
+    //REQUIRES: non-empty listofRegularOKRS.
+    //EFFECTS: returns ArrayList of titles of each RegularOKR in the ListofOKRs.
     public ArrayList<String> printTitlesListofOKRs() {
         ArrayList<String> titles = new ArrayList();
-        for (int i = 0; i < listofOKRs.size(); i++) {
-            titles.add(listofOKRs.get(i).getTitle());
+        for (int i = 0; i < listofRegularOKRS.size(); i++) {
+            titles.add(listofRegularOKRS.get(i).getTitle());
         }
         return titles;
     }
 
-    //REQUIRES: a new OKR instance has been created.
+    //REQUIRES: a new RegularOKR instance has been created.
     //MODIFIES: OKRCount, which tracks the number of OKRs we currently have.
     //EFFECTS: adds one to the OKRCount.
     public void addToCountOKR() {
@@ -129,10 +131,10 @@ public class OKRList {
         return OKRCount;
     }
 
-    //REQUIRES: non-empty listofOKRs
-    //EFFECTS: returns this listofOKRs
-    public ArrayList<OKR> getListofOKRs() {
-        return listofOKRs;
+    //REQUIRES: non-empty listofRegularOKRS
+    //EFFECTS: returns this listofRegularOKRS
+    public ArrayList<RegularOKR> getListofRegularOKRS() {
+        return listofRegularOKRS;
     }
 
 }

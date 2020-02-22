@@ -1,6 +1,6 @@
 package main.tests;
 
-import main.model.OKR;
+import main.model.RegularOKR;
 import main.model.OKRList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,10 +9,10 @@ import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class OKRListTest {
+public class RegularOKRListTest {
     OKRList okrList;
     Scanner scanner;
-    OKR okr = new OKR();
+    RegularOKR regularOkr = new RegularOKR();
 
     @BeforeEach
     public void setup() {
@@ -84,7 +84,7 @@ public class OKRListTest {
 
     @Test
     public void printTitlesListofOKRsTest() {
-        okrList.getListofOKRs().add(okr);
+        okrList.getListofRegularOKRS().add(regularOkr);
         okrList.addToCountOKR();
         assertEquals(1, okrList.getCountOKRs());
         assertEquals("", okrList.printTitlesListofOKRs().get(0));
