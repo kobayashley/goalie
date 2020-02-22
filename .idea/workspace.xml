@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bd8bd2-f54f-41da-b11a-351c6eed0d0c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/model/MoonShotOKR.java" afterPath="$PROJECT_DIR$/src/main/model/MoonShotOKR.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/model/OKRList.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/model/OKRList.java" afterPath="$PROJECT_DIR$/src/main/model/OKRList.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/RegularOKR.java" afterPath="$PROJECT_DIR$/src/main/model/RegularOKR.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/tests/RegularOKRListTest.java" afterPath="$PROJECT_DIR$/src/main/tests/RegularOKRListTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/tests/RegularOKRTest.java" afterPath="$PROJECT_DIR$/src/main/tests/RegularOKRTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,21 +36,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OKRList.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OKRList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/model/OKRList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            <state relative-caret-position="344">
+              <caret line="86" column="27" lean-forward="true" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3837#3838#0" expanded="true" />
-                <element signature="e#3863#3864#0" expanded="true" />
-                <element signature="e#3946#3947#0" expanded="true" />
-                <element signature="e#3977#3978#0" expanded="true" />
-                <element signature="e#4508#4509#0" expanded="true" />
-                <element signature="e#4539#4540#0" expanded="true" />
-                <element signature="e#4660#4661#0" expanded="true" />
-                <element signature="e#4693#4694#0" expanded="true" />
+                <element signature="e#4427#4428#0" expanded="true" />
+                <element signature="e#4453#4454#0" expanded="true" />
+                <element signature="e#4536#4537#0" expanded="true" />
+                <element signature="e#4567#4568#0" expanded="true" />
+                <element signature="e#5098#5099#0" expanded="true" />
+                <element signature="e#5129#5130#0" expanded="true" />
+                <element signature="e#5250#5251#0" expanded="true" />
+                <element signature="e#5283#5284#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoonShotOKR.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MoonShotOKR.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/model/MoonShotOKR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="300">
+              <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#959#960#0" expanded="true" />
@@ -90,40 +87,6 @@
                 <element signature="e#1459#1460#0" expanded="true" />
                 <element signature="e#1565#1566#0" expanded="true" />
                 <element signature="e#1611#1612#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OKR.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/model/OKR.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#644#645#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-                <element signature="e#991#992#0" expanded="true" />
-                <element signature="e#1029#1030#0" expanded="true" />
-                <element signature="e#1141#1142#0" expanded="true" />
-                <element signature="e#1173#1174#0" expanded="true" />
-                <element signature="e#1288#1289#0" expanded="true" />
-                <element signature="e#1331#1332#0" expanded="true" />
-                <element signature="e#1453#1454#0" expanded="true" />
-                <element signature="e#1490#1491#0" expanded="true" />
-                <element signature="e#1595#1596#0" expanded="true" />
-                <element signature="e#1630#1631#0" expanded="true" />
-                <element signature="e#1741#1742#0" expanded="true" />
-                <element signature="e#1779#1780#0" expanded="true" />
-                <element signature="e#1926#1927#0" expanded="true" />
-                <element signature="e#1964#1965#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -245,9 +208,9 @@
         <option value="$PROJECT_DIR$/src/main/model/RegularKeyResult.java" />
         <option value="$PROJECT_DIR$/src/main/model/MoonShotKR.java" />
         <option value="$PROJECT_DIR$/src/main/model/OKR.java" />
-        <option value="$PROJECT_DIR$/src/main/model/OKRList.java" />
         <option value="$PROJECT_DIR$/src/main/model/RegularOKR.java" />
         <option value="$PROJECT_DIR$/src/main/model/MoonShotOKR.java" />
+        <option value="$PROJECT_DIR$/src/main/model/OKRList.java" />
       </list>
     </option>
   </component>
@@ -844,24 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/OKRList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3837#3838#0" expanded="true" />
-            <element signature="e#3863#3864#0" expanded="true" />
-            <element signature="e#3946#3947#0" expanded="true" />
-            <element signature="e#3977#3978#0" expanded="true" />
-            <element signature="e#4508#4509#0" expanded="true" />
-            <element signature="e#4539#4540#0" expanded="true" />
-            <element signature="e#4660#4661#0" expanded="true" />
-            <element signature="e#4693#4694#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/OKR.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
@@ -912,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/MoonShotOKR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="300">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#959#960#0" expanded="true" />
@@ -922,6 +867,24 @@
             <element signature="e#1459#1460#0" expanded="true" />
             <element signature="e#1565#1566#0" expanded="true" />
             <element signature="e#1611#1612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/model/OKRList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="86" column="27" lean-forward="true" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4427#4428#0" expanded="true" />
+            <element signature="e#4453#4454#0" expanded="true" />
+            <element signature="e#4536#4537#0" expanded="true" />
+            <element signature="e#4567#4568#0" expanded="true" />
+            <element signature="e#5098#5099#0" expanded="true" />
+            <element signature="e#5129#5130#0" expanded="true" />
+            <element signature="e#5250#5251#0" expanded="true" />
+            <element signature="e#5283#5284#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -64,17 +64,28 @@ public class OKRList {
     //EFFECTS:  creates a new RegularOKR and sets its title to the inputted title, adds this RegularOKR to the listofOKRS in this list
     //          and increments the OKRCount.
     public void uiAddOption() {
-        String title;
-        RegularOKR newRegularOKR = new RegularOKR();
-        System.out.println("Would you like to add a new Regular RegularOKR or a Moonshot RegularOKR?");
-        //todo
-        System.out.println("Please enter a title for this RegularOKR");
-        title = scanner.nextLine();
-        System.out.println("you entered: " + title);
-        newRegularOKR.setTitle(title);
-        System.out.println("RegularOKR title has been set.");
-        listofOKRS.add(newRegularOKR);
-        addToCountOKR();
+        System.out.println("Would you like to add a new Regular RegularOKR [r] or a Moonshot RegularOKR [m]?");
+        String okrType = scanner.nextLine();
+        if(okrType == "r" || okrType == "R"){
+            RegularOKR newRegularOKR = new RegularOKR();
+            System.out.println("Please enter a title for this RegularOKR");
+            String title;
+            title = scanner.nextLine();
+            System.out.println("you entered: " + title);
+            newRegularOKR.setTitle(title);
+            System.out.println("RegularOKR title has been set.");
+            listofOKRS.add(newRegularOKR);
+            addToCountOKR();
+        } else if (okrType == "m" || okrType == "M") {
+            MoonShotOKR newMSOKR = new MoonShotOKR();
+            System.out.println("Please enter a title for this MoonshotOKR");
+            String title = scanner.nextLine();
+            System.out.println("you entered: " +title);
+            newMSOKR.setTitle(title);
+            System.out.println("MoonshotOKR title has been set");
+            listofOKRS.add(newMSOKR);
+            addToCountOKR();
+        }
     }
 
     //REQUIRES: param String yesno has received scanner's next
