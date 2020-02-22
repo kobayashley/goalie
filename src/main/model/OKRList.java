@@ -31,9 +31,7 @@ public class OKRList {
 
             if (option.equals("add")) {
                 uiAddOption();
-                Scanner input = new Scanner(System.in);
-                String yesno = input.next();
-                if(!uiContinue(yesno)){
+                if(!uiContinue()){
                     break;
                 }
             }
@@ -93,8 +91,10 @@ public class OKRList {
 
     //REQUIRES: param String yesno has received scanner's next
     //EFFECTS: returns true if user has inputted "y", and false if user has inputted "n" or anything else.
-    public boolean uiContinue(String yesno) {
+    public boolean uiContinue() {
         System.out.println("Continue? y/n");
+        Scanner input = new Scanner(System.in);
+        String yesno = input.next();
         if (yesno.equals("n")){
             return false;
         } else if (yesno.equals("y")) {

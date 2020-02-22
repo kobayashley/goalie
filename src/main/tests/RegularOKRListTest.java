@@ -24,19 +24,19 @@ public class RegularOKRListTest {
     @Test
     public void uiContinueNoTest(){
         String yesnotest = "n";
-        assertEquals(false, okrList.uiContinue(yesnotest));
+        assertEquals(false, okrList.uiContinue());
     }
 
     @Test
     public void uiContinueYesTest(){
         String yesnotest = "y";
-        assertEquals(true, okrList.uiContinue(yesnotest));
+        assertEquals(true, okrList.uiContinue());
     }
 
     @Test
     public void uiContinueErrortest(){
         String yesnotest = "gibberish";
-        assertEquals(false, okrList.uiContinue(yesnotest));
+        assertEquals(false, okrList.uiContinue());
 
     }
 
