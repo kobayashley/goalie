@@ -31,7 +31,8 @@ public class OKRList {
 
             if (option.equals("add")) {
                 uiAddOption();
-                String yesno = scanner.next();
+                Scanner input = new Scanner(System.in);
+                String yesno = input.next();
                 if(!uiContinue(yesno)){
                     break;
                 }
@@ -65,7 +66,9 @@ public class OKRList {
     //          and increments the OKRCount.
     public void uiAddOption() {
         System.out.println("Would you like to add a new Regular RegularOKR [r] or a Moonshot RegularOKR [m]?");
-        String okrType = scanner.next();
+//        String okrType = scanner.next();
+        Scanner input = new Scanner(System.in);
+        String okrType = input.next();
         if(okrType == "r" || okrType == "R"){
             RegularOKR newRegularOKR = new RegularOKR();
             System.out.println("Please enter a title for this RegularOKR");
@@ -92,9 +95,9 @@ public class OKRList {
     //EFFECTS: returns true if user has inputted "y", and false if user has inputted "n" or anything else.
     public boolean uiContinue(String yesno) {
         System.out.println("Continue? y/n");
-        if (yesno == "n"){
+        if (yesno.equals("n")){
             return false;
-        } else if (yesno == "y") {
+        } else if (yesno.equals("y")) {
             return true;
         } else {
             System.out.println("error");
