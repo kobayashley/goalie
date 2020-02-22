@@ -1,42 +1,19 @@
 package main.model;
 
-public class RegularKeyResult {
-
-    private boolean completed;
-    private String metric;
+public class RegularKeyResult extends KeyResult{
 
     public RegularKeyResult(){
         completed = false;
         metric = "";
     }
 
+
+    //REQUIRES: completed is not null
     //MODIFIES: this
-    //EFFECTS: this updated with completed flag.
-    public void markCompleted(){
+    //EFFECTS: marks this as a completed KR, prints message to confirm
+    @Override
+    void markCompleted() {
         this.completed = true;
-    }
-
-    //MODIFIES: this
-    //EFFECTS: this updated with incompleted flag.
-    public void markIncomplete(){
-        this.completed = false;
-    }
-
-    //REQUIRES: non-null completed value (true or false).
-    //EFFECTS: returns true if this key result is marked as completed, false if it is marked as incomplete.
-    public boolean isCompleted(){
-        return this.completed;
-    }
-
-    //MODIFIES: this
-    //EFFECTS: this updated with metric.
-    public void setMetric(String metric){
-        this.metric = metric;
-    }
-
-    //REQUIRES: non-empty metric.
-    //EFFECTS: returns this key result's metric.
-    public String getMetric(){
-        return this.metric;
+        System.out.println("Congrats! You've completed this KR!");
     }
 }

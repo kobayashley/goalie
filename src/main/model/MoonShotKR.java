@@ -2,7 +2,7 @@ package main.model;
 
 import java.util.ArrayList;
 
-public class MoonShotKR {
+public class MoonShotKR extends KeyResult {
     //Moonshots are stretch-goals in the form of Key Results, towards an overall Objective
 
     private boolean wellPositioned;
@@ -40,9 +40,18 @@ public class MoonShotKR {
         return this.extraResourcesAvailable;
     }
 
-    //REQUIERS: non-empty list of milestones
+    //REQUIRES: non-empty list of milestones
     //EFFECTS: returns the milestone at index i
     public String getMilestone(int i){
         return this.milestones.get(i);
+    }
+
+    //REQUIRES: completed is not null
+    //MODIFIES: this
+    //EFFECTS: marks this as a completed KR, prints message to confirm
+    @Override
+    void markCompleted() {
+        this.completed = true;
+        System.out.println("Wow! You reached the moon with this one!");
     }
 }
