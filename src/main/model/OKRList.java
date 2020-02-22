@@ -65,7 +65,7 @@ public class OKRList {
     //          and increments the OKRCount.
     public void uiAddOption() {
         System.out.println("Would you like to add a new Regular RegularOKR [r] or a Moonshot RegularOKR [m]?");
-        String okrType = scanner.nextLine();
+        String okrType = scanner.next();
         if(okrType == "r" || okrType == "R"){
             RegularOKR newRegularOKR = new RegularOKR();
             System.out.println("Please enter a title for this RegularOKR");
