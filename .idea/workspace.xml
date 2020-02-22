@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bd8bd2-f54f-41da-b11a-351c6eed0d0c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/model/MoonShotKR.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/model/KeyResult.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/model/OKR.class" afterPath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/model/OKR.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/tests/KeyResultTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/tests/OKRTest.class" afterPath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/tests/OKRTest.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/KeyResult.java" afterPath="$PROJECT_DIR$/src/main/model/RegularKeyResult.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/OKR.java" afterPath="$PROJECT_DIR$/src/main/model/OKR.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/tests/KeyResultTest.java" afterPath="$PROJECT_DIR$/src/main/tests/RegularKeyResultTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/tests/OKRTest.java" afterPath="$PROJECT_DIR$/src/main/tests/OKRTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/tests/ObjectiveTest.java" afterPath="$PROJECT_DIR$/src/main/tests/ObjectiveTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/MoonShotKR.java" afterPath="$PROJECT_DIR$/src/main/model/MoonShotKR.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -139,21 +129,21 @@
       <file leaf-file-name="MoonShotKR.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/model/MoonShotKR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="645">
+              <caret line="43" column="47" lean-forward="false" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
               <folding>
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#658#659#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
-                <element signature="e#740#741#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
+                <element signature="e#669#670#0" expanded="true" />
+                <element signature="e#843#844#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+                <element signature="e#1028#1029#0" expanded="true" />
+                <element signature="e#1070#1071#0" expanded="true" />
+                <element signature="e#1266#1267#0" expanded="true" />
+                <element signature="e#1317#1318#0" expanded="true" />
+                <element signature="e#1450#1451#0" expanded="true" />
+                <element signature="e#1495#1496#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -850,21 +840,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/MoonShotKR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="645">
+          <caret line="43" column="47" lean-forward="false" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
           <folding>
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1266#1267#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+            <element signature="e#1495#1496#0" expanded="true" />
           </folding>
         </state>
       </provider>
