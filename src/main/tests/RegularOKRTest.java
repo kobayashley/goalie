@@ -109,45 +109,45 @@ public class RegularOKRTest {
     @Test
     public void insertKRNotAlreadyThereTest(){
         //check that keyresults is empty as initialized
-        assertTrue(regularOkr.getKeyresults().isEmpty());
+        assertTrue(regularOkr.getRegkeyresults().isEmpty());
         //call insertKR to insert a test KR into the arraylist
         kr.setMetric("testmetric");
         regularOkr.insertKR(kr);
         //check that keyresults now contains the test KR
-        assertTrue(regularOkr.getKeyresults().contains(kr));
+        assertTrue(regularOkr.getRegkeyresults().contains(kr));
         //check that keyresults is size 1
-        assertEquals(1, regularOkr.getKeyresults().size());
+        assertEquals(1, regularOkr.getRegkeyresults().size());
 
     }
 
     @Test
     public void insertKRAlreadyThereTest(){
         //check that keyresults is empty as initialized
-        assertTrue(regularOkr.getKeyresults().isEmpty());
+        assertTrue(regularOkr.getRegkeyresults().isEmpty());
         //call insertKR to insert a test KR into the arraylist
         kr.setMetric("testmetric");
         regularOkr.insertKR(kr);
         //check that keyresults now contains the test KR
-        assertTrue(regularOkr.getKeyresults().contains(kr));
+        assertTrue(regularOkr.getRegkeyresults().contains(kr));
         //check that keyresults is size 1
-        assertEquals(1, regularOkr.getKeyresults().size());
+        assertEquals(1, regularOkr.getRegkeyresults().size());
         //call insertKR to insert the same test KR
         regularOkr.insertKR(kr);
         //check that the second test KR was not added ie it is in keyresults only once
-        assertEquals(1, regularOkr.getKeyresults().size());
+        assertEquals(1, regularOkr.getRegkeyresults().size());
     }
 
     @Test
     public void containsKRTrueTest(){
         //check that kr is empty as initialized
-        assertEquals(0 , regularOkr.getKeyresults().size());
+        assertEquals(0 , regularOkr.getRegkeyresults().size());
         //call insertKR to insert a test KR into the arraylist
         kr.setMetric("testmetric");
         regularOkr.insertKR(kr);
         //check that keyresults now contains the test KR
-        assertTrue(regularOkr.getKeyresults().contains(kr));
+        assertTrue(regularOkr.getRegkeyresults().contains(kr));
         //check that keyresults is size 1
-        assertEquals(1, regularOkr.getKeyresults().size());
+        assertEquals(1, regularOkr.getRegkeyresults().size());
         //call containsKR
         //check containsKR correctly returns true
         assertTrue(regularOkr.containsKR(kr));
@@ -157,9 +157,9 @@ public class RegularOKRTest {
     @Test
     public void containsKRFalseTest(){
         //check that kr is empty as initialized
-        assertTrue(regularOkr.getKeyresults().isEmpty());
+        assertTrue(regularOkr.getRegkeyresults().isEmpty());
         //check that keyresults is size 0, empty
-        assertEquals(0, regularOkr.getKeyresults().size());
+        assertEquals(0, regularOkr.getRegkeyresults().size());
         //call containsKR
         //check containsKR correctly returns false
         assertFalse(regularOkr.containsKR(kr));

@@ -84,7 +84,7 @@ public class RegularOKRListTest {
 
     @Test
     public void printTitlesListofOKRsTest() {
-        okrList.getListofRegularOKRS().add(regularOkr);
+        okrList.getListofOKRS().add(regularOkr);
         okrList.addToCountOKR();
         assertEquals(1, okrList.getCountOKRs());
         assertEquals("", okrList.printTitlesListofOKRs().get(0));

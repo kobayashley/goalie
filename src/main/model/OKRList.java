@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class OKRList {
     int OKRCount = 0;
-    ArrayList<RegularOKR> listofRegularOKRS = new ArrayList();
+    ArrayList<OKR> listofOKRS = new ArrayList();
     Scanner scanner = new Scanner(System.in);
 
     //EFFECTS: starts the user interaction with this program.
@@ -60,8 +60,8 @@ public class OKRList {
     }
 
     //REQUIRES: user input has selected "add"
-    //MODIFIES: title, newOKR, OKRcount, listofRegularOKRS
-    //EFFECTS:  creates a new RegularOKR and sets its title to the inputted title, adds this RegularOKR to the listofRegularOKRS in this list
+    //MODIFIES: title, newOKR, OKRcount, listofOKRS
+    //EFFECTS:  creates a new RegularOKR and sets its title to the inputted title, adds this RegularOKR to the listofOKRS in this list
     //          and increments the OKRCount.
     public void uiAddOption() {
         String title;
@@ -73,7 +73,7 @@ public class OKRList {
         System.out.println("you entered: " + title);
         newRegularOKR.setTitle(title);
         System.out.println("RegularOKR title has been set.");
-        listofRegularOKRS.add(newRegularOKR);
+        listofOKRS.add(newRegularOKR);
         addToCountOKR();
     }
 
@@ -91,12 +91,12 @@ public class OKRList {
         }
     }
 
-    //REQUIRES: non-empty listofRegularOKRS.
+    //REQUIRES: non-empty listofOKRS.
     //EFFECTS: returns ArrayList of titles of each RegularOKR in the ListofOKRs.
     public ArrayList<String> printTitlesListofOKRs() {
         ArrayList<String> titles = new ArrayList();
-        for (int i = 0; i < listofRegularOKRS.size(); i++) {
-            titles.add(listofRegularOKRS.get(i).getTitle());
+        for (int i = 0; i < listofOKRS.size(); i++) {
+            titles.add(listofOKRS.get(i).getTitle());
         }
         return titles;
     }
@@ -131,10 +131,10 @@ public class OKRList {
         return OKRCount;
     }
 
-    //REQUIRES: non-empty listofRegularOKRS
-    //EFFECTS: returns this listofRegularOKRS
-    public ArrayList<RegularOKR> getListofRegularOKRS() {
-        return listofRegularOKRS;
+    //REQUIRES: non-empty listofOKRS
+    //EFFECTS: returns this listofOKRS
+    public ArrayList<OKR> getListofOKRS() {
+        return listofOKRS;
     }
 
 }
