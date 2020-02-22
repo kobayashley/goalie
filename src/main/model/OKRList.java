@@ -38,6 +38,9 @@ public class OKRList {
             if (option.equals("view")) {
                 System.out.println("list of current OKRs: ");
                 System.out.println(printTitlesListofOKRs());
+                if(!uiContinue()){
+                    break;
+                }
             }
             if (option.equals("quit")) {
                 break;
