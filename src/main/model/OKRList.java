@@ -69,7 +69,7 @@ public class OKRList {
 //        String okrType = scanner.next();
         Scanner input = new Scanner(System.in);
         String okrType = input.next();
-        if(okrType == "r" || okrType == "R"){
+        if(okrType.equals("r") || okrType.equals("R")){
             RegularOKR newRegularOKR = new RegularOKR();
             System.out.println("Please enter a title for this RegularOKR");
             String title;
@@ -79,7 +79,7 @@ public class OKRList {
             System.out.println("RegularOKR title has been set.");
             listofOKRS.add(newRegularOKR);
             addToCountOKR();
-        } else if (okrType == "m" || okrType == "M") {
+        } else if (okrType.equals("m") || okrType.equals("M") ) {
             MoonShotOKR newMSOKR = new MoonShotOKR();
             System.out.println("Please enter a title for this MoonshotOKR");
             String title = scanner.nextLine();
