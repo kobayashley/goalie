@@ -12,7 +12,7 @@ public class RegularKeyResult extends KeyResult{
     //MODIFIES: this
     //EFFECTS: marks this as a completed KR, prints message to confirm
     @Override
-    void markCompleted() {
+    public void markCompleted() {
         this.completed = true;
         System.out.println("Congrats! You've completed this KR!");
     }
