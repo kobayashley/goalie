@@ -1,6 +1,6 @@
 package main.tests;
 
-import main.model.KeyResult;
+import main.model.RegularKeyResult;
 import main.model.OKR;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -19,7 +19,7 @@ public class OKRTest {
     Date testDate;
     String team;
     String newTeam;
-    KeyResult kr;
+    RegularKeyResult kr;
 
     @BeforeEach
     public void setup(){
@@ -29,7 +29,7 @@ public class OKRTest {
         testDate.setTime(3567);
         team = "test team";
         newTeam = "team2";
-        kr = new KeyResult();
+        kr = new RegularKeyResult();
     }
 
     @Test

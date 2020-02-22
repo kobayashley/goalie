@@ -1,6 +1,6 @@
 package main.tests;
 
-import main.model.KeyResult;
+import main.model.RegularKeyResult;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -8,12 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class KeyResultTest {
-    KeyResult kr;
+public class RegularKeyResultTest {
+    RegularKeyResult kr;
 
     @BeforeEach
     public void setup(){
-        kr = new KeyResult();
+        kr = new RegularKeyResult();
     }
 
     @Test

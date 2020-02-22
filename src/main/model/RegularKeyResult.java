@@ -1,11 +1,11 @@
 package main.model;
 
-public class KeyResult {
+public class RegularKeyResult {
 
     private boolean completed;
     private String metric;
 
-    public KeyResult(){
+    public RegularKeyResult(){
         completed = false;
         metric = "";
     }

@@ -7,7 +7,7 @@ import java.util.Date;
 public class OKR {
     private Objective objective;
 
-    private ArrayList<KeyResult> keyresults;
+    private ArrayList<RegularKeyResult> keyresults;
     private Date startDate;
     private Date endDate;
     private Date todaysDate;
@@ -86,7 +86,7 @@ public class OKR {
 
     //REQUIRES: non-empty keyresults
     //EFFECTS: returns this keyresults
-    public ArrayList<KeyResult> getKeyresults() {
+    public ArrayList<RegularKeyResult> getKeyresults() {
         return keyresults;
     }
 
@@ -122,7 +122,7 @@ public class OKR {
 
     //MODIFIES: this
     //EFFECTS: adds kr into this OKR's list of krs if it does not already exist.
-    public void insertKR(KeyResult kr) {
+    public void insertKR(RegularKeyResult kr) {
         if (!keyresults.contains(kr)) {
             this.keyresults.add(kr);
         } else {
@@ -132,12 +132,12 @@ public class OKR {
 
     //MODIFIES: this
     //EFFECTS: removes this kr if it is found in this OKR's list of krs.
-    public void removeKR(KeyResult kr){
+    public void removeKR(RegularKeyResult kr){
         this.keyresults.remove(kr);
     }
 
     //EFFECTS: returns true if this OKR contains kr
-    public boolean containsKR(KeyResult kr){
+    public boolean containsKR(RegularKeyResult kr){
         return keyresults.contains(kr);
         }
 }
