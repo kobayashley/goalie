@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bd8bd2-f54f-41da-b11a-351c6eed0d0c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/model/KeyResult.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/model/RegularKeyResult.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/tests/RegularKeyResultTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/model/KeyResult.java" afterPath="$PROJECT_DIR$/src/main/model/KeyResult.java" />
       <change beforePath="$PROJECT_DIR$/src/main/model/MoonShotKR.java" afterPath="$PROJECT_DIR$/src/main/model/MoonShotKR.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/RegularKeyResult.java" afterPath="$PROJECT_DIR$/src/main/model/RegularKeyResult.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -131,11 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoonShotKR.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MoonShotKR.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/model/MoonShotKR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="50" column="69" lean-forward="true" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
+            <state relative-caret-position="355">
+              <caret line="49" column="60" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
               <folding>
                 <element signature="e#449#450#0" expanded="true" />
                 <element signature="e#488#489#0" expanded="true" />
@@ -145,20 +142,22 @@
                 <element signature="e#899#900#0" expanded="true" />
                 <element signature="e#1046#1047#0" expanded="true" />
                 <element signature="e#1088#1089#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1335#1336#0" expanded="true" />
-                <element signature="e#1468#1469#0" expanded="true" />
-                <element signature="e#1513#1514#0" expanded="true" />
+                <element signature="e#1285#1286#0" expanded="true" />
+                <element signature="e#1336#1337#0" expanded="true" />
+                <element signature="e#1469#1470#0" expanded="true" />
+                <element signature="e#1514#1515#0" expanded="true" />
+                <element signature="e#1693#1694#0" expanded="true" />
+                <element signature="e#1742#1743#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegularKeyResult.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RegularKeyResult.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/model/RegularKeyResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="70" lean-forward="false" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -167,17 +166,17 @@
       <file leaf-file-name="KeyResult.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/model/KeyResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#585#586#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#841#842#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
+                <element signature="e#692#693#0" expanded="true" />
+                <element signature="e#728#729#0" expanded="true" />
+                <element signature="e#843#844#0" expanded="true" />
+                <element signature="e#877#878#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -222,9 +221,9 @@
         <option value="$PROJECT_DIR$/src/main/model/ObjectiveShot.java" />
         <option value="$PROJECT_DIR$/src/main/model/MoonShot.java" />
         <option value="$PROJECT_DIR$/src/main/model/Objective.java" />
+        <option value="$PROJECT_DIR$/src/main/model/RegularKeyResult.java" />
         <option value="$PROJECT_DIR$/src/main/model/KeyResult.java" />
         <option value="$PROJECT_DIR$/src/main/model/MoonShotKR.java" />
-        <option value="$PROJECT_DIR$/src/main/model/RegularKeyResult.java" />
       </list>
     </option>
   </component>
@@ -834,25 +833,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/KeyResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/model/RegularKeyResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/MoonShotKR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="50" column="69" lean-forward="true" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
+        <state relative-caret-position="355">
+          <caret line="49" column="60" lean-forward="false" selection-start-line="49" selection-start-column="60" selection-end-line="49" selection-end-column="60" />
           <folding>
             <element signature="e#449#450#0" expanded="true" />
             <element signature="e#488#489#0" expanded="true" />
@@ -862,19 +869,13 @@
             <element signature="e#899#900#0" expanded="true" />
             <element signature="e#1046#1047#0" expanded="true" />
             <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1513#1514#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+            <element signature="e#1742#1743#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/RegularKeyResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="70" lean-forward="false" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>

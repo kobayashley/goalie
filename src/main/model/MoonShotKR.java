@@ -36,7 +36,7 @@ public class MoonShotKR extends KeyResult {
 
     //REQUIRES: extraResourcesAvailable is not null
     //EFFECTS: returns whether there are extra resources available to accomplish this moonshot
-    public boolean isExtraResourcesAvailable(){
+    public boolean areExtraResourcesAvailable(){
         return this.extraResourcesAvailable;
     }
 
@@ -44,6 +44,12 @@ public class MoonShotKR extends KeyResult {
     //EFFECTS: returns the milestone at index i
     public String getMilestone(int i){
         return this.milestones.get(i);
+    }
+
+    //REQUIRES: non-empty milestones, and milestone m must exist in this list
+    //EFFECTS: returns index of this milestone. OVERLOADING.
+    public int getMilestone(String m){
+        return this.milestones.indexOf(m);
     }
 
     //REQUIRES: completed is not null

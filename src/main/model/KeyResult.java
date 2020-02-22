@@ -4,6 +4,8 @@ public abstract class KeyResult {
     boolean completed;
     String metric;
 
+
+
     //MODIFIES: this
     //EFFECTS: this updated with completed flag.
     abstract void markCompleted();
