@@ -52,12 +52,14 @@ public abstract class OKR {
     //REQUIRES: non-empty objective title.
     //EFFECTS: returns objective's title
     public String getTitle(){
+        String title = "";
         try {
-           return objective.getTitle();
+           title = objective.getTitle();
         } catch (EmptyTitleException e) {
             e.printStackTrace();
             System.out.println("Title is empty");
         }
+        return title;
     }
 
     //REQUIRES: non-empty RegularOKR start date.

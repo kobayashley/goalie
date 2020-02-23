@@ -15,7 +15,7 @@ public class Objective {
     //EFFECTS: returns this title.
     public String getTitle() throws EmptyTitleException {
         if(this.title.isEmpty()){
-            throw EmptyTitleException;
+            throw new EmptyTitleException();
         }
         return title;
     }
