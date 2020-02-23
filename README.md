@@ -95,3 +95,33 @@ specification has removed any constraints on when the operation can be called (t
    potentially fix the problem and run the operation successfully later, then forcing the caller to potentially handle
    the exceptional condition makes sense. Bloch suggests that unchecked exceptions should be used for
    programming problems, including checks on the validity of input parameters.
+
+   11. Interactivity and Visuals
+
+This is it! The last deliverable!!!
+
+In this deliverable you need to add a GUI. This deliverable will be a lot of work, mainly because of how
+ incredibly annoying GUI development can be. Start right away!
+
+The TAs are prepared to help out if you're using Swing for your GUI development. Anything outside of that,
+and you're somewhat on your own.  You're free to try, but you need to at least get that basic level working to pass
+ this deliverable, so don't attempt the exotic until you've attained something basic you can revert to
+ and demo if you get stuck!
+
+Advice: As soon as you get something minimal working, commit that code! Then if you break it later,
+you can always revert.  Actually, commit every single time you walk away from your chair, with a meaningful message
+ indicating the state of the code. It's fine to commit buggy code, intermediate code, etc, as long as you're clear in
+ your commit message what you're committing.  We will *not* be giving extensions for "my computer broke, and I forgot
+  to commit anything" so commit at least daily.
+
+For 2:
+
+Add a basic gui with a text entry box and an "enter" button to replace that user input loop (the prompt for the user
+must also be displayed so they know what to enter), and a message window that shows what would have been displayed
+ back to the user in the original version.  Be prepared to explain how your application works from that
+ button press down.
+
+For 4:
+
+Make it look pretty! Incorporate UI elements such as buttons, and text boxes, a map, creative use of sounds,
+ or visualisations, as appropriate for your application.  Make creative use of visualisation where you can.
