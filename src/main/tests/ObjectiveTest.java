@@ -2,6 +2,7 @@ package main.tests;
 
 import main.exceptions.EmptyTitleException;
 import main.model.Objective;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -20,14 +21,14 @@ public class ObjectiveTest {
 
     @Test
     public void setTitleFromEmptyTest() throws EmptyTitleException{
-        assertEquals(ob.getTitle(),"");
+        assertEquals("", ob.getTitle());
         ob.setTitle(testTitle);
         assertEquals(ob.getTitle(), testTitle);
     }
 
     @Test
     public void setTitleFromNonEmptyTest() throws EmptyTitleException{
-        assertEquals(ob.getTitle(), "");
+        assertEquals("", ob.getTitle());
         ob.setTitle(testTitle);
         assertEquals(ob.getTitle(), testTitle);
         ob.setTitle(testTitle);
@@ -36,9 +37,18 @@ public class ObjectiveTest {
 
     @Test
     public void getTitleTest() throws EmptyTitleException{
-        assertEquals(ob.getTitle(), "");
+        assertEquals("", ob.getTitle() );
         ob.setTitle(testTitle);
         assertEquals(ob.getTitle(), testTitle);
+    }
+
+    @Test
+    public void getEmptyTitleTest() throws EmptyTitleException{
+    ob.setTitle("");
+    Assertions.assertThrows(EmptyTitleException.class, () -> {
+            ob.getTitle();
+        });
+
     }
 
     @Test
