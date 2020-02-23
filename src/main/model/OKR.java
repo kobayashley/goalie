@@ -58,8 +58,11 @@ public abstract class OKR {
         } catch (EmptyTitleException e) {
             e.printStackTrace();
             System.out.println("Title is empty");
+        } finally {
+            System.out.println("Tried to get the title for you!");
         }
         return title;
+
     }
 
     //REQUIRES: non-empty RegularOKR start date.
