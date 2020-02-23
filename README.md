@@ -68,3 +68,22 @@ Getting .7: If you do a minimal job of the above, and have poor naming and struc
 
 Getting 1: If you add more subclassing, overriding or overloading, or have particularly clean code with good naming,
  or nice  abstraction (meaning low duplication between your classes) then you'll get a 1.
+
+ 6. Robustness
+
+ For this project deliverable you need to make your code more robust!
+
+ For basic credit of .7:
+
+ Create your own exception class (named appropriately)
+ Throw your exception when it should be thrown
+ Catch the exception and appropriately handle it at the right point in the call chain
+ Have a finally clause
+ Write tests to check that the exception is thrown in the right situations
+ For full credit of 1:
+
+ Use an exception hierarchy appropriately, meaning you have different catches for levels of exceptions, or
+ Create multiple kinds of Exceptions, or
+ Catch and recover from the exceptions thrown if files are not found (those ones we told you to just stick in the
+ signatures in earlier deliverables)
+

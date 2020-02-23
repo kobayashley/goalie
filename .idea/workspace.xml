@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bd8bd2-f54f-41da-b11a-351c6eed0d0c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/OKRList.java" afterPath="$PROJECT_DIR$/src/main/model/OKRList.java" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -212,7 +211,6 @@
         <option value="$PROJECT_DIR$/src/main/tests/ObjectiveTest.java" />
         <option value="$PROJECT_DIR$/src/main/tests/OKRTest.java" />
         <option value="$PROJECT_DIR$/src/main/tests/OKRListTest.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/model/ObjectiveShot.java" />
         <option value="$PROJECT_DIR$/src/main/model/MoonShot.java" />
         <option value="$PROJECT_DIR$/src/main/model/Objective.java" />
@@ -224,6 +222,7 @@
         <option value="$PROJECT_DIR$/src/main/model/MoonShotOKR.java" />
         <option value="$PROJECT_DIR$/src/main/tests/RegularOKRListTest.java" />
         <option value="$PROJECT_DIR$/src/main/model/OKRList.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -700,14 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/Objective.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -883,6 +874,14 @@
           <folding>
             <element signature="e#492#503#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="89" column="1" lean-forward="false" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
