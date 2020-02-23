@@ -98,10 +98,10 @@ public class OKRList {
         System.out.println("Continue? y/n");
         Scanner input = new Scanner(System.in);
         String yesno = input.next();
-        if (yesno.equals("n")){
-            return false;
-        } else if (yesno.equals("y")) {
+        if (yesno.equals("y") || yesno.equals("Y")) {
             return true;
+        } else if (yesno.equals("n") || yesno.equals("N")){
+            return false;
         } else {
             System.out.println("error");
             return false;
