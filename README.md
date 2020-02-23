@@ -87,3 +87,11 @@ Getting 1: If you add more subclassing, overriding or overloading, or have parti
  Catch and recover from the exceptions thrown if files are not found (those ones we told you to just stick in the
  signatures in earlier deliverables)
 
+specification has removed any constraints on when the operation can be called (the REQUIRES clause is empty) and the
+ EFFECTS clause states explicitly when the operation could respond to an exceptional condition by
+  throwing a IllegalValueException.
+
+  Bloch suggests that checked exceptions should be used for recoverable conditions, meaning that if a caller can
+   potentially fix the problem and run the operation successfully later, then forcing the caller to potentially handle
+   the exceptional condition makes sense. Bloch suggests that unchecked exceptions should be used for
+   programming problems, including checks on the validity of input parameters.

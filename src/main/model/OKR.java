@@ -1,5 +1,7 @@
 package main.model;
 
+import main.exceptions.EmptyTitleException;
+
 import java.util.Calendar;
 import java.util.Date;
 
@@ -50,7 +52,12 @@ public abstract class OKR {
     //REQUIRES: non-empty objective title.
     //EFFECTS: returns objective's title
     public String getTitle(){
-        return objective.getTitle();
+        try {
+           return objective.getTitle();
+        } catch (EmptyTitleException e) {
+            e.printStackTrace();
+            System.out.println("Title is empty");
+        }
     }
 
     //REQUIRES: non-empty RegularOKR start date.

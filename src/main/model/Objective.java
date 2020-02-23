@@ -1,5 +1,7 @@
 package main.model;
 
+import main.exceptions.EmptyTitleException;
+
 public class Objective {
     private String title;
     private boolean priority;
@@ -11,7 +13,10 @@ public class Objective {
 
     //REQUIRES: non-empty title.
     //EFFECTS: returns this title.
-    public String getTitle() {
+    public String getTitle() throws EmptyTitleException {
+        if(this.title.isEmpty()){
+            throw EmptyTitleException;
+        }
         return title;
     }
 
