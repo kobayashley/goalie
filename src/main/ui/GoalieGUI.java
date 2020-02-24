@@ -5,7 +5,10 @@ package main.ui;
  * and open the template in the editor.
  */
 
+import main.model.OKR;
 import main.model.RegularOKR;
+
+import java.util.ArrayList;
 
 /**
  *
@@ -29,6 +32,8 @@ public class GoalieGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
 
+        int OKRCount = 0;
+        ArrayList<OKR> listofOKRS = new ArrayList();
         leftPane = new javax.swing.JLayeredPane();
         welcomePanel = new javax.swing.JPanel();
         startButton = new javax.swing.JButton();
@@ -339,12 +344,15 @@ public class GoalieGUI extends javax.swing.JFrame {
 
     private void addTitleTextFieldActionPerformed(java.awt.event.ActionEvent evt) {
         // todo save new OKR in list of OKR
+        evt.getActionCommand();
         RegularOKR newRegularOKR = new RegularOKR();
         String title;
         title = addTitleTextField.getText();
         newRegularOKR.setTitle(title);
         System.out.println("you entered: " + title);
-
+        titleFeedbackLabel.setText("you entered: " +title);
+//        listofOKRS.add(newRegularOKR);
+//        OKRCount++;
     }
 
 
@@ -381,6 +389,8 @@ public class GoalieGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify
+    private int OKRCount;
+    ArrayList<OKR> listofOKRS;
     private javax.swing.JTextField addTitleTextField;
     private javax.swing.JButton addButton;
     private javax.swing.JButton viewButton;
