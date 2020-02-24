@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e2bd8bd2-f54f-41da-b11a-351c6eed0d0c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI$1.class" afterPath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI$2.class" afterPath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI$3.class" afterPath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI$4.class" afterPath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI$4.class" />
       <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI$5.class" afterPath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI$5.class" />
       <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI.class" afterPath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI.class" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/GoalieGUI.java" afterPath="$PROJECT_DIR$/src/main/ui/GoalieGUI.java" />
@@ -28,7 +32,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/ui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -41,8 +45,8 @@
       <file leaf-file-name="OKRList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/model/OKRList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4673#4674#0" expanded="true" />
@@ -155,26 +159,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoalieGUI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GoalieGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/ui/GoalieGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="324" column="26" lean-forward="true" selection-start-line="324" selection-start-column="26" selection-end-line="324" selection-end-column="26" />
+            <state relative-caret-position="212">
+              <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
               <folding>
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#648#678#0" expanded="true" />
-                <element signature="e#683#746#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#620#650#0" expanded="true" />
                 <element signature="e#1735#1736#0" expanded="true" />
                 <element signature="e#1795#1796#0" expanded="true" />
-                <element signature="e#3274#3275#0" expanded="true" />
-                <element signature="e#3334#3335#0" expanded="true" />
-                <element signature="e#3528#3529#0" expanded="true" />
-                <element signature="e#3588#3589#0" expanded="true" />
-                <element signature="e#3782#3783#0" expanded="true" />
-                <element signature="e#3842#3843#0" expanded="true" />
-                <element signature="e#17934#17935#0" expanded="true" />
-                <element signature="e#17998#17999#0" expanded="true" />
+                <element signature="e#3305#3306#0" expanded="true" />
+                <element signature="e#3365#3366#0" expanded="true" />
+                <element signature="e#3563#3564#0" expanded="true" />
+                <element signature="e#3623#3624#0" expanded="true" />
+                <element signature="e#3821#3822#0" expanded="true" />
+                <element signature="e#3881#3882#0" expanded="true" />
+                <element signature="e#16558#16645#0" expanded="true" />
+                <element signature="e#18035#18036#0" expanded="true" />
+                <element signature="e#18099#18100#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -226,6 +230,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>add</find>
+      <find>welcomePanel</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -261,8 +266,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/ui/GUI.java" />
         <option value="$PROJECT_DIR$/src/main/model/OKRList.java" />
-        <option value="$PROJECT_DIR$/src/main/ui/GoalieGUI.java" />
         <option value="$PROJECT_DIR$/src/main/ui/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/ui/GoalieGUI.java" />
       </list>
     </option>
   </component>
@@ -321,13 +326,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CPSC210_PROJECT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CPSC210_PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CPSC210_PROJECT" type="b2602c69:ProjectViewProjectNode" />
@@ -788,20 +786,20 @@
         <state relative-caret-position="375">
           <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding>
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#648#678#0" expanded="true" />
-            <element signature="e#683#746#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#620#650#0" expanded="true" />
             <element signature="e#1735#1736#0" expanded="true" />
             <element signature="e#1795#1796#0" expanded="true" />
-            <element signature="e#3274#3275#0" expanded="true" />
-            <element signature="e#3334#3335#0" expanded="true" />
-            <element signature="e#3528#3529#0" expanded="true" />
-            <element signature="e#3588#3589#0" expanded="true" />
-            <element signature="e#3782#3783#0" expanded="true" />
-            <element signature="e#3842#3843#0" expanded="true" />
-            <element signature="e#17934#17935#0" expanded="true" />
-            <element signature="e#17998#17999#0" expanded="true" />
+            <element signature="e#3305#3306#0" expanded="true" />
+            <element signature="e#3365#3366#0" expanded="true" />
+            <element signature="e#3563#3564#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3821#3822#0" expanded="true" />
+            <element signature="e#3881#3882#0" expanded="true" />
+            <element signature="e#16558#16645#0" expanded="true" />
+            <element signature="e#18035#18036#0" expanded="true" />
+            <element signature="e#18099#18100#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1045,24 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/OKRList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4673#4674#0" expanded="true" />
-            <element signature="e#4699#4700#0" expanded="true" />
-            <element signature="e#4782#4783#0" expanded="true" />
-            <element signature="e#4813#4814#0" expanded="true" />
-            <element signature="e#5344#5345#0" expanded="true" />
-            <element signature="e#5375#5376#0" expanded="true" />
-            <element signature="e#5496#5497#0" expanded="true" />
-            <element signature="e#5529#5530#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/RegularOKR.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -1079,34 +1059,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ui/GoalieGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="324" column="26" lean-forward="true" selection-start-line="324" selection-start-column="26" selection-end-line="324" selection-end-column="26" />
-          <folding>
-            <element signature="e#395#396#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#648#678#0" expanded="true" />
-            <element signature="e#683#746#0" expanded="true" />
-            <element signature="e#1735#1736#0" expanded="true" />
-            <element signature="e#1795#1796#0" expanded="true" />
-            <element signature="e#3274#3275#0" expanded="true" />
-            <element signature="e#3334#3335#0" expanded="true" />
-            <element signature="e#3528#3529#0" expanded="true" />
-            <element signature="e#3588#3589#0" expanded="true" />
-            <element signature="e#3782#3783#0" expanded="true" />
-            <element signature="e#3842#3843#0" expanded="true" />
-            <element signature="e#17934#17935#0" expanded="true" />
-            <element signature="e#17998#17999#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/ui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/model/OKRList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4673#4674#0" expanded="true" />
+            <element signature="e#4699#4700#0" expanded="true" />
+            <element signature="e#4782#4783#0" expanded="true" />
+            <element signature="e#4813#4814#0" expanded="true" />
+            <element signature="e#5344#5345#0" expanded="true" />
+            <element signature="e#5375#5376#0" expanded="true" />
+            <element signature="e#5496#5497#0" expanded="true" />
+            <element signature="e#5529#5530#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ui/GoalieGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+          <folding>
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#620#650#0" expanded="true" />
+            <element signature="e#1735#1736#0" expanded="true" />
+            <element signature="e#1795#1796#0" expanded="true" />
+            <element signature="e#3305#3306#0" expanded="true" />
+            <element signature="e#3365#3366#0" expanded="true" />
+            <element signature="e#3563#3564#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3821#3822#0" expanded="true" />
+            <element signature="e#3881#3882#0" expanded="true" />
+            <element signature="e#16558#16645#0" expanded="true" />
+            <element signature="e#18035#18036#0" expanded="true" />
+            <element signature="e#18099#18100#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
