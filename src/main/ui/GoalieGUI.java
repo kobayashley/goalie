@@ -5,6 +5,8 @@ package main.ui;
  * and open the template in the editor.
  */
 
+import main.model.RegularOKR;
+
 /**
  *
  * @author ashleykobayashi
@@ -28,16 +30,19 @@ public class GoalieGUI extends javax.swing.JFrame {
     private void initComponents() {
 
         leftPane = new javax.swing.JLayeredPane();
-        welcomePane = new javax.swing.JPanel();
+        welcomePanel = new javax.swing.JPanel();
         startButton = new javax.swing.JButton();
         welcomeLabel = new javax.swing.JLabel();
-        optionPanel = new javax.swing.JPanel();
+        optionsPanel = new javax.swing.JPanel();
         addButton = new javax.swing.JButton();
         viewButton = new javax.swing.JButton();
         quitButton = new javax.swing.JButton();
         rightPane = new javax.swing.JLayeredPane();
         addPanel = new javax.swing.JPanel();
         addLabel = new javax.swing.JLabel();
+        titlePromptLabel = new javax.swing.JLabel();
+        addTitleTextField = new javax.swing.JTextField();
+        titleFeedbackLabel = new javax.swing.JLabel();
         viewPanel = new javax.swing.JPanel();
         viewLabel = new javax.swing.JLabel();
         quitPanel = new javax.swing.JPanel();
@@ -54,8 +59,8 @@ public class GoalieGUI extends javax.swing.JFrame {
 
         welcomeLabel.setText("Welcome to Goalie! Please press start:");
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(welcomePane);
-        welcomePane.setLayout(jPanel4Layout);
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(welcomePanel);
+        welcomePanel.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
                 jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel4Layout.createSequentialGroup()
@@ -96,8 +101,8 @@ public class GoalieGUI extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(optionPanel);
-        optionPanel.setLayout(jPanel5Layout);
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(optionsPanel);
+        optionsPanel.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
                 jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel5Layout.createSequentialGroup()
@@ -125,51 +130,78 @@ public class GoalieGUI extends javax.swing.JFrame {
 
         jPanel5Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addButton, viewButton, quitButton});
 
-        leftPane.setLayer(welcomePane, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        leftPane.setLayer(optionPanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        leftPane.setLayer(welcomePanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        leftPane.setLayer(optionsPanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane2Layout = new javax.swing.GroupLayout(leftPane);
         leftPane.setLayout(jLayeredPane2Layout);
         jLayeredPane2Layout.setHorizontalGroup(
                 jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                                .addComponent(welcomePane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(welcomePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE))
                         .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jLayeredPane2Layout.createSequentialGroup()
                                         .addContainerGap()
-                                        .addComponent(optionPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(optionsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addContainerGap()))
         );
         jLayeredPane2Layout.setVerticalGroup(
                 jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(welcomePane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(welcomePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jLayeredPane2Layout.createSequentialGroup()
                                         .addContainerGap()
-                                        .addComponent(optionPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(optionsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGap(144, 144, 144)))
         );
 
+        addPanel.setBackground(javax.swing.UIManager.getDefaults().getColor("PropSheet.selectedSetBackground"));
         addPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         addLabel.setText("add");
+
+        titlePromptLabel.setText("Please enter a title for this new OKR:");
+
+        addTitleTextField.setText("Enter Title");
+        addTitleTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addTitleTextFieldActionPerformed(evt);
+            }
+        });
+
+        titleFeedbackLabel.setText("You entered: ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(addPanel);
         addPanel.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
                 jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addContainerGap(80, Short.MAX_VALUE)
-                                .addComponent(addLabel)
-                                .addGap(127, 127, 127))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap(92, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addComponent(addLabel)
+                                                .addGap(145, 145, 145))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addComponent(titlePromptLabel)
+                                                .addGap(41, 41, 41))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addComponent(addTitleTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(titleFeedbackLabel)
+                                                .addGap(125, 125, 125))))
         );
         jPanel1Layout.setVerticalGroup(
                 jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(addLabel)
+                                .addGap(18, 18, 18)
+                                .addComponent(titlePromptLabel)
+                                .addGap(18, 18, 18)
+                                .addComponent(addTitleTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(titleFeedbackLabel)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+
         );
 
         viewPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -190,7 +222,7 @@ public class GoalieGUI extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addContainerGap()
                                 .addComponent(viewLabel)
-                                .addContainerGap(245, Short.MAX_VALUE))
+                                .addContainerGap(417, Short.MAX_VALUE))
         );
 
         quitPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -297,20 +329,26 @@ public class GoalieGUI extends javax.swing.JFrame {
         addPanel.setVisible(false);
         viewPanel.setVisible(false);
         quitPanel.setVisible(true);
-        System.exit(0);
     }
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
-        optionPanel.setVisible(true);
-        welcomePane.setVisible(false);
+        welcomePanel.setVisible(false);
+        optionsPanel.setVisible(true);
     }
 
-    /**
-     * @param args the command line arguments
-     */
+    private void addTitleTextFieldActionPerformed(java.awt.event.ActionEvent evt) {
+        // todo save new OKR in list of OKR
+        RegularOKR newRegularOKR = new RegularOKR();
+        String title;
+        title = addTitleTextField.getText();
+        newRegularOKR.setTitle(title);
+        System.out.println("you entered: " + title);
+
+    }
+
+
     public void openGUI() {
-        running = true;
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -343,6 +381,7 @@ public class GoalieGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify
+    private javax.swing.JTextField addTitleTextField;
     private javax.swing.JButton addButton;
     private javax.swing.JButton viewButton;
     private javax.swing.JButton quitButton;
@@ -351,13 +390,15 @@ public class GoalieGUI extends javax.swing.JFrame {
     private javax.swing.JLabel addLabel;
     private javax.swing.JLabel viewLabel;
     private javax.swing.JLabel quitLabel;
+    private javax.swing.JLabel titlePromptLabel;
+    private javax.swing.JLabel titleFeedbackLabel;
     private javax.swing.JLayeredPane rightPane;
     private javax.swing.JLayeredPane leftPane;
     private javax.swing.JPanel addPanel;
     private javax.swing.JPanel viewPanel;
     private javax.swing.JPanel quitPanel;
-    private javax.swing.JPanel welcomePane;
-    private javax.swing.JPanel optionPanel;
+    private javax.swing.JPanel welcomePanel;
+    private javax.swing.JPanel optionsPanel;
     // End of variables declaration
     public boolean running = false;
 }
