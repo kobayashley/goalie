@@ -72,7 +72,7 @@ public class GoalieGUI extends javax.swing.JFrame {
                                 .addComponent(jLabel1)
                                 .addGap(26, 26, 26)
                                 .addComponent(jButton4)
-                                .addContainerGap(204, Short.MAX_VALUE))
+                                .addContainerGap(378, Short.MAX_VALUE))
         );
 
         jButton1.setText("add");
@@ -141,9 +141,7 @@ public class GoalieGUI extends javax.swing.JFrame {
         );
         jLayeredPane2Layout.setVerticalGroup(
                 jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(174, 174, 174))
+                        .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(jLayeredPane2Layout.createSequentialGroup()
                                         .addContainerGap()
@@ -358,6 +356,7 @@ public class GoalieGUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     // End of variables declaration
 }
+
 
 
 
