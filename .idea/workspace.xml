@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2bd8bd2-f54f-41da-b11a-351c6eed0d0c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI$5.class" afterPath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI$5.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI.class" afterPath="$PROJECT_DIR$/out/production/CPSC210_PROJECT/main/ui/GoalieGUI.class" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/GoalieGUI.java" afterPath="$PROJECT_DIR$/src/main/ui/GoalieGUI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/ui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="150">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -152,11 +155,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoalieGUI.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GoalieGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/ui/GoalieGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="310" column="5" lean-forward="true" selection-start-line="310" selection-start-column="5" selection-end-line="310" selection-end-column="5" />
+            <state relative-caret-position="285">
+              <caret line="324" column="26" lean-forward="true" selection-start-line="324" selection-start-column="26" selection-end-line="324" selection-end-column="26" />
               <folding>
                 <element signature="e#395#396#0" expanded="true" />
                 <element signature="e#427#428#0" expanded="true" />
@@ -170,9 +173,8 @@
                 <element signature="e#3588#3589#0" expanded="true" />
                 <element signature="e#3782#3783#0" expanded="true" />
                 <element signature="e#3842#3843#0" expanded="true" />
-                <element signature="e#16491#16578#0" expanded="true" />
-                <element signature="e#17968#17969#0" expanded="true" />
-                <element signature="e#18032#18033#0" expanded="true" />
+                <element signature="e#17934#17935#0" expanded="true" />
+                <element signature="e#17998#17999#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -259,8 +261,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/ui/GUI.java" />
         <option value="$PROJECT_DIR$/src/main/model/OKRList.java" />
-        <option value="$PROJECT_DIR$/src/main/ui/Main.java" />
         <option value="$PROJECT_DIR$/src/main/ui/GoalieGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/ui/Main.java" />
       </list>
     </option>
   </component>
@@ -663,7 +665,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -798,9 +800,8 @@
             <element signature="e#3588#3589#0" expanded="true" />
             <element signature="e#3782#3783#0" expanded="true" />
             <element signature="e#3842#3843#0" expanded="true" />
-            <element signature="e#16491#16578#0" expanded="true" />
-            <element signature="e#17968#17969#0" expanded="true" />
-            <element signature="e#18032#18033#0" expanded="true" />
+            <element signature="e#17934#17935#0" expanded="true" />
+            <element signature="e#17998#17999#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1078,18 +1079,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/ui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/ui/GoalieGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="310" column="5" lean-forward="true" selection-start-line="310" selection-start-column="5" selection-end-line="310" selection-end-column="5" />
+        <state relative-caret-position="285">
+          <caret line="324" column="26" lean-forward="true" selection-start-line="324" selection-start-column="26" selection-end-line="324" selection-end-column="26" />
           <folding>
             <element signature="e#395#396#0" expanded="true" />
             <element signature="e#427#428#0" expanded="true" />
@@ -1103,10 +1096,17 @@
             <element signature="e#3588#3589#0" expanded="true" />
             <element signature="e#3782#3783#0" expanded="true" />
             <element signature="e#3842#3843#0" expanded="true" />
-            <element signature="e#16491#16578#0" expanded="true" />
-            <element signature="e#17968#17969#0" expanded="true" />
-            <element signature="e#18032#18033#0" expanded="true" />
+            <element signature="e#17934#17935#0" expanded="true" />
+            <element signature="e#17998#17999#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/ui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
