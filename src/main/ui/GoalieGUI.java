@@ -5,6 +5,8 @@ package main.ui;
  * and open the template in the editor.
  */
 
+import main.model.OKRList;
+
 /**
  *
  * @author ashleykobayashi
@@ -302,8 +304,8 @@ public class GoalieGUI extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
-        jPanel4.setVisible(false);
         jPanel5.setVisible(true);
+        jPanel4.setVisible(false);
 //        OKRList l = new OKRList();
 //        l.start();
     }
