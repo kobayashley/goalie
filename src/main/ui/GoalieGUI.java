@@ -297,18 +297,21 @@ public class GoalieGUI extends javax.swing.JFrame {
         jPanel1.setVisible(false);
         jPanel2.setVisible(false);
         jPanel3.setVisible(true);
+        System.exit(0);
     }
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
         jPanel4.setVisible(false);
         jPanel5.setVisible(true);
+//        OKRList l = new OKRList();
+//        l.start();
     }
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+    public void openGUI() {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

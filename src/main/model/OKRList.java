@@ -26,7 +26,7 @@ public class OKRList {
     //EFFECTS: takes user inputs and adds or prints OKRs, or quits to break.
     public void UserInput() {
         String option = "";
-        while (scanner.hasNext()) {
+        while (true) {
             option = getUIOption();
 
             if (option.equals("add")) {
